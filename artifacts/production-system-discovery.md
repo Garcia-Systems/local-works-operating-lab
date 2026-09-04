@@ -787,3 +787,25 @@ These needs come from fictional operational-control analysis, not database schem
 ### Test continuity before kickoff
 **Observed need:** Provider and Local Works disappearance should be tested before work starts so neither partner nor customer is trapped.
 **Possible future capability:** Delivery-continuity readiness assessment.
+
+## Chapter 21 discoveries — project kickoff and requirements
+
+**Observed need:** Project kickoff must assemble prior commercial and delivery context without duplicating it.
+**Possible future capability:** A project context pack that links prior records.
+
+**Observed need:** Requirements must trace to approved scope, evidence, and acceptance.
+**Possible future capability:** Lightweight requirement provenance and traceability.
+
+**Observed need:** Open questions have owners and can block only affected implementation readiness.
+**Possible future capability:** A project open-question register with blocking state.
+
+**Observed need:** Requirements need an explicit baseline and version state.
+**Possible future capability:** Requirement baseline/version history.
+
+**Observed need:** Clarifications, corrections, new requirements, scope changes, technical discoveries, and defect discoveries remain distinct.
+**Possible future capability:** Requirement-change classification linked to later change control.
+
+**Observed need:** Decision authority and escalation must be explicit across customer, Local Works, delivery, and vendor roles.
+**Possible future capability:** Project decision-authority and escalation mapping.
+
+These are operating discoveries, not a database schema, screen, API, or Laravel model.
