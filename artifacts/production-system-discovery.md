@@ -605,3 +605,33 @@ These are needs observed in one fictional scoping exercise, not a production dat
 
 **Observed need:** Scope needs an explicit readiness decision before detailed estimation, including customer clarification, technical validation, reduction, and blocked outcomes.
 **Possible future capability:** Estimate-readiness gate with visible reasons.
+
+## Chapter 15 — Price the Engagement
+
+### Separate value, price, and cost
+**Observed need:** Customer price must remain distinct from delivery cost and customer value.
+**Possible future capability:** Separate pricing, cost, and value records, preserving UNKNOWN and estimate-versus-quote status.
+
+### Contribution before selling
+**Observed need:** Local Works needs to understand project contribution before selling, without confusing it with accounting profit.
+**Possible future capability:** Contribution and owner-time-adjusted analysis per potential proposal/project.
+
+### Owner effort
+**Observed need:** Pre-sales and project owner effort materially affect engagement economics.
+**Possible future capability:** Pre-sales/project owner-hour estimates with an internal planning value.
+
+### Payment timing
+**Observed need:** Supplier timing and customer deposits create or reduce cash exposure independently of project contribution.
+**Possible future capability:** Payment-schedule and maximum cash-exposure modeling.
+
+### Discount sensitivity
+**Observed need:** Discounts can reduce contribution disproportionately because direct costs do not fall automatically.
+**Possible future capability:** Price and discount sensitivity analysis that never silently changes scope.
+
+### No healthy pricing window
+**Observed need:** Some opportunities have no overlap between a defensible Local Works floor and customer economic ceiling.
+**Possible future capability:** Pricing-decision state and evidence-backed reason, including no-healthy-price exits.
+
+### Restructuring alternatives
+**Observed need:** A deal may require reduced scope, a simpler path, or phases rather than a price-only concession.
+**Possible future capability:** Comparable alternative pricing/scope structures with their independent cost and value assumptions.
