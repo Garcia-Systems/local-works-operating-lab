@@ -252,3 +252,45 @@ They are possible capabilities, not database, interface, or architecture designs
 - **Frequency:** One executable model; no live outcomes.
 - **Current workaround:** Restricted `AuditRecommendation` values and explicit report limitations.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 7 observations
+
+These needs come from a fictional qualification exercise, not live Local Works
+operations. They are possible capabilities, not UI, schema, API, or architecture
+requirements.
+
+### Group related findings under a workflow opportunity
+
+- **Observed need:** Multiple audit findings may represent one business opportunity, while unrelated findings from the same audit must remain separate.
+- **Possible future capability:** Explicitly group selected findings under an opportunity/workflow with a recorded grouping rationale.
+- **Evidence:** Chapter 7 provisionally groups two Harbor Fitness membership-account findings and explicitly excludes membership comparison.
+- **Frequency:** One fictional grouping exercise; no live operating frequency.
+- **Current workaround:** Immutable `OpportunityCandidate` records and Markdown rationale.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Keep problem potential separate from commercial fit
+
+- **Observed need:** A significant problem can lack sponsor access, while excellent access can accompany an insignificant problem.
+- **Possible future capability:** Separate problem and engagement assessments without blending them into a magic score.
+- **Evidence:** Chapter 7 compares strong/weak, moderate/strong, and strong/strong fictional combinations.
+- **Frequency:** Three deterministic teaching scenarios; no live outcomes.
+- **Current workaround:** Separate qualitative fields and inspectable signals.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve decision rationale and unresolved questions
+
+- **Observed need:** Opportunity decisions must remain explainable and retain critical unknowns rather than translating missing evidence into negative facts.
+- **Possible future capability:** Decision history containing rationale, evidence status, unknowns, and next questions.
+- **Evidence:** The Harbor Fitness assessment preserves unmeasured burden, authority, constraints, and baselines alongside its provisional decision.
+- **Frequency:** Seven modeled decision categories; no live decision history.
+- **Current workaround:** Immutable assessment revisions and version-controlled artifacts.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Record exits that never become projects
+
+- **Observed need:** An opportunity can exit through a simple improvement, monitoring, leaving alone, referral, or disqualification without becoming discovery or delivery work.
+- **Possible future capability:** Structured opportunity exit reason and disposition history, separate from projects.
+- **Evidence:** Chapter 7's executable exercise demonstrates each major exit and preserves hard disqualifiers.
+- **Frequency:** Six fictional examples plus a monitor category; no live outcomes.
+- **Current workaround:** `OpportunityDecision` values with required rationale.
+- **Production priority:** Unassigned pending real operating evidence.
