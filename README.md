@@ -40,12 +40,18 @@ Every problem should be considered in this order:
 
 This is a decision set, not a promise to progress from left to right. “Leave alone” can be the best economic answer, and custom software is never the default.
 
-## Run Chapter 0
+## Implemented chapters
+
+- **Chapter 0 — The Local Works Experiment:** establishes the unproven business hypotheses and evidence language.
+- **Chapter 1 — What Are We Actually Selling?:** separates customer requests, validated problems, service stages, technical solutions, delivery, and ongoing support.
+
+## Run the chapters
 
 Python 3.11 or newer is required.
 
 ```bash
 python scripts/run_chapter_00.py
+python scripts/run_chapter_01.py
 python -m pytest
 ```
 
@@ -70,4 +76,4 @@ The exercise prints the initial hypotheses grouped by business test and distingu
 
 ## Intentionally absent
 
-There is no web application, API, authentication, CRM, dashboard, portal, database, ORM, customer CRUD, or speculative production feature list. Harbor Fitness, the first planned fictional customer, is not analyzed here. Chapter 0 establishes the experiment only; it does not begin Chapter 1 or decide on any solution.
+There is no web application, API, authentication, CRM, dashboard, portal, database, ORM, customer CRUD, pricing engine, proposal engine, or speculative production feature list. Harbor Fitness is a fictional running case; Chapter 1 records only its initial request and does not select or design a solution.
