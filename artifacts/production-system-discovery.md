@@ -82,3 +82,43 @@ These observations arise from the Chapter 2 fictional qualification exercise. Th
 - **Frequency:** Once in the running fictional case; not measured in live operations.
 - **Current workaround:** State fit and next action separately in operating artifacts.
 - **Production priority:** Unassigned pending operating evidence.
+
+## Chapter 3 observations
+
+These possible capabilities arise from a fictional experiment design, not live market usage. They do not specify databases or screens.
+
+### Separate public evidence from inference
+
+- **Observed need:** Local Works must distinguish a factual public observation from an inferred business problem.
+- **Possible future capability:** Preserve source/context, observation, hypothesis, unknowns, and follow-up question separately.
+- **Evidence:** The Harbor Fitness exercise produces different plausible interpretations of each invented public fact and prohibits validation from observation alone.
+- **Frequency:** Three fictional observations; no live frequency.
+- **Current workaround:** Structured Markdown and `PublicFrictionObservation`.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve acquisition origin
+
+- **Observed need:** A market test must identify how a prospect or conversation originated so channel evidence is not mixed.
+- **Possible future capability:** Acquisition-source tracking.
+- **Evidence:** Chapter 3 compares thirteen candidate channels with different purposes, trust characteristics, and attribution limits.
+- **Frequency:** One simulated comparison; no live frequency.
+- **Current workaround:** State the channel in each experiment record.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Track both experiment money and owner effort
+
+- **Observed need:** A low-cash channel can still be expensive in owner time, and both limits require stopping rules.
+- **Possible future capability:** Experiment cash, owner-time, and supporting-expense tracking.
+- **Evidence:** Experiment 001 independently records a cash limit and an owner-time limit; the channel comparison shows different burden profiles.
+- **Frequency:** One experiment and thirteen compared channel hypotheses; no live usage.
+- **Current workaround:** Precommit qualitative limits in the experiment artifact.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Retain learning from every response state
+
+- **Observed need:** Negative replies, corrections, constraints, and no response can inform a market hypothesis without becoming opportunities.
+- **Possible future capability:** Market-experiment outcome and learning tracking, including no-response and negative-response states.
+- **Evidence:** Five fictional responses separately reveal possible pain, a false inference, immaterial friction, blocked authority, and ambiguous silence.
+- **Frequency:** Five simulations; no real responses.
+- **Current workaround:** Record outcome, learning, follow-up, and stop decision in the exercise.
+- **Production priority:** Unassigned pending real operating evidence.
