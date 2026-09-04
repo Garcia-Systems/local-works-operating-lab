@@ -887,3 +887,28 @@ These needs arise from fictional change-control training, not a database schema,
 
 **Observed need:** Defect/correction disputes require evidence from requirements, acceptance, and decision records.
 **Possible future capability:** Change classification with evidence traceability.
+
+## Chapter 25 discoveries — QA and customer acceptance
+
+These needs arise from fictional QA training, not a database schema, screen, API, or Laravel model.
+
+**Observed need:** Tests must trace to requirements and acceptance criteria.
+**Possible future capability:** Test-case traceability.
+
+**Observed need:** Defects must remain separate from customer scope changes.
+**Possible future capability:** Defect/change classification linkage.
+
+**Observed need:** QA cycles require test, defect, fix, and retest history.
+**Possible future capability:** QA-cycle records.
+
+**Observed need:** Customer acceptance requires an explicit decision and evidence.
+**Possible future capability:** Acceptance workflow and acceptance record.
+
+**Observed need:** Known issues can be accepted without blocking launch.
+**Possible future capability:** Known-issue register linked to acceptance.
+
+**Observed need:** Untested approved MUST requirements should be visible.
+**Possible future capability:** Requirement coverage reporting.
+
+**Observed need:** Customer-found avoidable defects are a meaningful quality signal.
+**Possible future capability:** QA-escape tracking.
