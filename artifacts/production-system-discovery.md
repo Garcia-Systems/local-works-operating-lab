@@ -534,3 +534,35 @@ These needs come from one fictional solution-selection exercise. They do not spe
 - **Frequency:** One executable gate and fictional application.
 - **Current workaround:** Typed justification and written rationale.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 13 — Solution economics
+
+### Trace burden to recoverable value
+
+**Observed need:** Solution economics must connect current burden to specific recoverable components while preserving their evidence.
+**Possible future capability:** Trace economic benefits back to burden components.
+
+### Classify benefit realization
+
+**Observed need:** Value must distinguish freed capacity, cash savings, revenue, risk reduction, and non-monetized benefits.
+**Possible future capability:** Benefit-type classification.
+
+### Separate cost timing
+
+**Observed need:** Solutions have both one-time implementation costs and recurring ownership costs, including meaningful customer internal effort.
+**Possible future capability:** Separate implementation and recurring cost models.
+
+### Make assumptions visible
+
+**Observed need:** Results depend on recoverable fraction, adoption, realization, useful life, and newly created operating work.
+**Possible future capability:** Assumption-driven solution economics with provenance.
+
+### Compare alternatives incrementally
+
+**Observed need:** Alternatives require comparison of additional value, cost, risk, and potentially different useful lives—not only standalone totals.
+**Possible future capability:** Incremental cost/value comparison between alternatives.
+
+### Preserve changing conclusions
+
+**Observed need:** Low, baseline, and high assumptions can change an economic conclusion as evidence develops.
+**Possible future capability:** Scenario and version history.
