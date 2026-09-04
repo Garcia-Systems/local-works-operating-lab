@@ -48,6 +48,7 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 - **Chapter 3 — The First Market Experiment:** compares qualitative acquisition hypotheses and designs a bounded, ethical, observation-led learning experiment without running it or selecting a winning channel.
 - **Chapter 4 — The Acquisition Funnel:** models hypothetical, channel-specific progression, expected versus simulated outcomes, bottlenecks, sensitivity, quality, and owner effort without claiming sales evidence.
 - **Chapter 5 — Customer Acquisition Economics:** connects attributable cash, owner effort, and Chapter 4 funnel outcomes; safely handles zero-customer periods and compares hypothetical channel economics without selecting a winner.
+- **Chapter 6 — The Digital Friction Audit:** maps adaptable customer and employee workflows, separates observed facts from friction hypotheses, preserves unknowns, and recommends whether further investigation is warranted without selecting a solution.
 
 ## Run the chapters
 
@@ -60,10 +61,11 @@ python scripts/run_chapter_02.py
 python scripts/run_chapter_03.py
 python scripts/run_chapter_04.py
 python scripts/run_chapter_05.py
+python scripts/run_chapter_06.py
 python -m pytest
 ```
 
-The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses and service stages, while Chapter 2 compares fictional prospects and preserves unknowns rather than treating them as negative facts. Chapter 3 separates public observations from inferred problems, accounts for cash and owner time, and treats every channel as unvalidated. Chapter 4 distinguishes activity from commercial progress and labels all funnel arithmetic and simulations as hypothetical rather than evidence. Chapter 5 separates cash CAC from owner time and fully loaded CAC, retains prior-period failures, and leaves zero-denominator metrics undefined.
+The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses and service stages, while Chapter 2 compares fictional prospects and preserves unknowns rather than treating them as negative facts. Chapter 3 separates public observations from inferred problems, accounts for cash and owner time, and treats every channel as unvalidated. Chapter 4 distinguishes activity from commercial progress and labels all funnel arithmetic and simulations as hypothetical rather than evidence. Chapter 5 separates cash CAC from owner time and fully loaded CAC, retains prior-period failures, and leaves zero-denominator metrics undefined. Chapter 6 records customer and operational friction without turning incomplete evidence into low significance or an implementation recommendation.
 
 ## Repository map
 
@@ -84,4 +86,4 @@ The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses an
 
 ## Intentionally absent
 
-There is no web application, API, authentication, CRM, dashboard, portal, database, ORM, customer CRUD, pricing engine, proposal engine, or speculative production feature list. Harbor Fitness is a fictional running case; Chapter 1 records only its initial request and does not select or design a solution.
+There is no web application, API, authentication, CRM, dashboard, portal, database, ORM, customer CRUD, pricing engine, proposal engine, or speculative production feature list. Harbor Fitness is a fictional running case; its artifacts and audit do not select or design a solution.

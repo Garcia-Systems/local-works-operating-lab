@@ -202,3 +202,53 @@ These needs were exposed by hypothetical training arithmetic, not live Local Wor
 - **Frequency:** One conceptual comparison; contribution has not been modeled or measured.
 - **Current workaround:** Record the dependency without calculating LTV, pricing, or contribution.
 - **Production priority:** Deferred until later operating chapters and real evidence.
+
+## Chapter 6 observations
+
+These needs were exposed by the fictional audit exercise, not live customer work.
+They are possible capabilities, not database, interface, or architecture designs.
+
+### Represent only the relevant workflow stages
+
+- **Observed need:** Local Works needs to represent a business workflow as adaptable journey stages without forcing irrelevant stages into an audit.
+- **Possible future capability:** Structured customer/workflow journey representation.
+- **Evidence:** Chapter 6 maps eight Harbor Fitness stages, while the executable model permits any nonempty subset.
+- **Frequency:** One fictional audit; no real operating frequency.
+- **Current workaround:** `JourneyStage` values selected explicitly in each `DigitalFrictionAudit`.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Separate observation from inferred friction
+
+- **Observed need:** Each finding must preserve an observed fact separately from an inferred problem.
+- **Possible future capability:** Finding records containing observation, hypothesis, evidence, unknowns, and follow-up questions.
+- **Evidence:** The Harbor Fitness management instruction is recorded separately from possible member inconvenience and staff burden.
+- **Frequency:** Ten fictional findings; no live usage.
+- **Current workaround:** Immutable `FrictionObservation` and `AuditFinding` records plus Markdown.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Identify every affected party
+
+- **Observed need:** A friction item may affect customers, employees, managers, or multiple parties.
+- **Possible future capability:** Affected-party classification.
+- **Evidence:** The join-form finding affects employees and managers; the membership-change finding identifies all three parties.
+- **Frequency:** Two multi-party fictional findings; no measured frequency.
+- **Current workaround:** A tuple of `AffectedParty` labels.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve neutral and positive findings
+
+- **Observed need:** Audits need to record areas working well, not only problems, so they do not manufacture sales opportunities.
+- **Possible future capability:** Neutral audit findings rather than problem-only records.
+- **Evidence:** Five Harbor Fitness findings document adequate or intentionally human processes.
+- **Frequency:** One fictional audit.
+- **Current workaround:** `WORKING_ADEQUATELY` disposition and a dedicated report section.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Permit an audit to stop
+
+- **Observed need:** An audit can end without discovery or implementation, and discovery itself does not authorize a project.
+- **Possible future capability:** Audit recommendation/outcome tracking that remains separate from project decisions.
+- **Evidence:** Five audit outcomes include no meaningful friction and insufficient information, while the model always reports implementation as unapproved.
+- **Frequency:** One executable model; no live outcomes.
+- **Current workaround:** Restricted `AuditRecommendation` values and explicit report limitations.
+- **Production priority:** Unassigned pending real operating evidence.
