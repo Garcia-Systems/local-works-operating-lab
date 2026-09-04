@@ -837,3 +837,28 @@ These needs arise from fictional translation training, not a database schema, sc
 **Observed need:** Technical decisions need lightweight context, options, rationale, requirement, and risk links.
 
 **Possible future capability:** Technical decision record.
+
+## Chapter 23 discoveries — milestones and project control
+
+These are needs revealed by fictional delivery-control training, not a database schema, screen, API, or Laravel model.
+
+**Observed need:** Projects need proportional milestones and explicitly owned, dependent tasks.
+**Possible future capability:** Lightweight project delivery tracking.
+
+**Observed need:** Baseline milestone dates, current forecasts, and actual dates must remain separate.
+**Possible future capability:** Milestone baseline/forecast/actual history.
+
+**Observed need:** Blockers must identify causal owner, impact, affected work, next action, and escalation state.
+**Possible future capability:** Structured blocker register.
+
+**Observed need:** Critical decisions can block delivery and their latency can explain schedule movement.
+**Possible future capability:** Decision-request workflow.
+
+**Observed need:** Actual effort plus a current estimate to complete should be compared with the original estimate during delivery.
+**Possible future capability:** Project forecast and variance tracking.
+
+**Observed need:** Customer updates should be generated from current project facts rather than optimistic generalities.
+**Possible future capability:** Structured project-update generation.
+
+**Observed need:** Local Works customer communication, coordination, decision, and review time must be visible.
+**Possible future capability:** Owner effort tracking by project.

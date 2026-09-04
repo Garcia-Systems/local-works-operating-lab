@@ -1,0 +1,27 @@
+# Project control record
+
+- **Project:**
+- **Date:**
+- **Scope baseline:**
+- **Requirements baseline:**
+- **Estimate baseline:**
+- **Milestones:**
+- **Tasks:**
+- **Completed:**
+- **In progress:**
+- **Next:**
+- **Blockers:**
+- **Risks:**
+- **Decisions needed:**
+- **Customer actions:**
+- **Local Works actions:**
+- **Delivery partner actions:**
+- **Vendor actions:**
+- **Estimate vs actual:**
+- **Forecast changes:**
+- **Scope-change signals:**
+- **Quality concerns:**
+- **Owner effort:**
+- **Customer update:**
+- **Project health:**
+- **Control decision:**
