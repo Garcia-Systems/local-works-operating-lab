@@ -996,3 +996,37 @@ These needs arise from fictional support-economics training, not a database sche
 
 **Observed need:** A recommendation may legitimately reject a recurring plan.
 **Possible future capability:** Support-plan decision records.
+
+## Chapter 30 discoveries — expansion, retention, and referrals
+
+These needs arise from fictional relationship training, not a schema, UI, API, CRM, or Laravel model.
+
+**Observed need:** Customer relationships need state beyond active projects.
+**Possible future capability:** Customer relationship lifecycle.
+
+**Observed need:** Value evidence must be preserved separately from expected benefit.
+**Possible future capability:** Outcome-measurement records.
+
+**Observed need:** Support history can generate expansion signals without automatically generating sales opportunities.
+**Possible future capability:** Support-to-expansion signal linkage.
+
+**Observed need:** Expansion opportunities should reuse qualification and economics workflow.
+**Possible future capability:** Existing-customer opportunity pipeline.
+
+**Observed need:** Relationships need churn-risk and offboarding records.
+**Possible future capability:** Retention/churn tracking.
+
+**Observed need:** Referral requests require readiness and timing.
+**Possible future capability:** Referral-readiness workflow.
+
+**Observed need:** Public proof requires permission and measured evidence.
+**Possible future capability:** Case-study/testimonial permission records.
+
+**Observed need:** Relationship economics span projects, support, incidents, and expansion.
+**Possible future capability:** Cumulative customer economics.
+
+**Observed need:** Quiet customers may still be healthy.
+**Possible future capability:** Relationship-health signals independent of activity volume.
+
+**Observed need:** Retention must not depend on operational lock-in.
+**Possible future capability:** Access/ownership/offboarding readiness checks.

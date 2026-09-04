@@ -71,6 +71,7 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 - **Chapter 26 — Launch, Final Payment, and Project Economics:** completes **Part VI — Deliver the First Project** with proportional launch readiness, configuration activation, production verification, stabilization, commercial closeout, simulated payment timing, actual project/owner/cash economics, value-measurement planning, and evidence-led closeout.
 - **Chapter 27 — Warranty vs Support vs New Work:** begins **Part VII — Own the Relationship After Launch** with evidence-led post-launch triage, operational warranty assessment, support entitlement, responsibility and commercial boundaries, explicit goodwill/owner effort, and fair routing to support, vendors, incident response, or new-project discovery.
 - **Chapter 29 — Recurring Support Economics:** compares bounded pay-as-you-go, monthly, prepaid, and hybrid support economics; preserves warranty, goodwill, customer value, incident reserve, owner capacity, and partner/vendor risk; and permits no recurring plan as the best answer.
+- **Chapter 30 — Expansion, Retention, and Referrals:** completes **Part VII — Own the Relationship After Launch** with evidence-led relationship health, value review, qualified expansion and leave-alone decisions, ethical referral/public-proof boundaries, churn learning, and cumulative relationship economics.
 
 ### Part VI summary
 
@@ -81,11 +82,12 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 - **Chapter 25:** QA and customer acceptance.
 - **Chapter 26:** Launch, commercial closeout, and actual project economics.
 
-### Part VII — Own the Relationship After Launch
+### Part VII — Own the Relationship After Launch (complete)
 
 - **Chapter 27:** Warranty vs support vs new work.
 - **Chapter 28:** Incident response and support escalation (the expected input; Chapter 28 files are not present in this checkout).
 - **Chapter 29:** Recurring support economics and capacity.
+- **Chapter 30:** Expansion, retention, referrals, and relationship economics.
 
 ## Run the chapters
 
@@ -121,6 +123,7 @@ python scripts/run_chapter_25.py
 python scripts/run_chapter_26.py
 python scripts/run_chapter_27.py
 python scripts/run_chapter_29.py
+python scripts/run_chapter_30.py
 python -m pytest
 ```
 
