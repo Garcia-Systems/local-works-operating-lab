@@ -436,3 +436,52 @@ These needs arise from one fictional economics exercise, not production design e
 - **Frequency:** One fictional evidence plan.
 - **Current workaround:** Git history and dated artifacts.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 11 observations
+
+These are operational needs exposed by fictional qualification work, not specifications for screens, databases, APIs, or Laravel models.
+
+### Aggregate prior-stage evidence
+
+- **Observed need:** Qualification uses evidence from audit, discovery, workflow reconstruction, and economics.
+- **Possible future capability:** Opportunity-level qualification view aggregating those evidence stages.
+- **Evidence:** Harbor Fitness qualification cites Chapters 6–10 rather than recreating discovery.
+- **Frequency:** One fictional assessment.
+- **Current workaround:** Linked version-controlled artifacts.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve independent dimension evidence
+
+- **Observed need:** Qualification dimensions need independent ratings and supporting evidence, including unknowns.
+- **Possible future capability:** Structured qualification assessment.
+- **Evidence:** Eleven dimensions retain separate states; unknown budget is not converted to insufficiency.
+- **Frequency:** Multiple fictional exercise scenarios.
+- **Current workaround:** Typed Python records and a Markdown matrix.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Retain decision reasons and history
+
+- **Observed need:** Local Works needs explicit reasons for advancing, requesting evidence, nurturing, referring, declining, or disqualifying.
+- **Possible future capability:** Qualification decision and reason history.
+- **Evidence:** Chapter 11 emits a decision, rationale, gaps, and next action without a hidden score.
+- **Frequency:** Eight fictional decisions plus Harbor Fitness.
+- **Current workaround:** Deterministic rules and version control.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Keep hard disqualifiers visible
+
+- **Observed need:** Hard disqualifiers must remain visible regardless of positive signals.
+- **Possible future capability:** Risk/disqualifier tracking.
+- **Evidence:** An unauthorized concealment scenario disqualifies despite otherwise strong dimensions.
+- **Frequency:** One fictional boundary test.
+- **Current workaround:** Explicit risk severity and precedence rule.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Account for remaining pre-sales effort
+
+- **Observed need:** Remaining evidence, research, proposal, and partner work consumes scarce owner capacity.
+- **Possible future capability:** Track estimated pre-sales effort alongside its evidence and revisions.
+- **Evidence:** The exercise contrasts approximately three and 20 hours; Harbor Fitness records approximately five fictional planning hours.
+- **Frequency:** Three fictional estimates.
+- **Current workaround:** Assessment field and written next action.
+- **Production priority:** Unassigned pending real operating evidence.
