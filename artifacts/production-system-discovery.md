@@ -1030,3 +1030,49 @@ These needs arise from fictional relationship training, not a schema, UI, API, C
 
 **Observed need:** Retention must not depend on operational lock-in.
 **Possible future capability:** Access/ownership/offboarding readiness checks.
+
+## Chapter 31B observations
+
+These needs came only from a deterministic fictional portfolio simulation. They are possible future capabilities, not schemas, screens, APIs, or implementation commitments.
+
+### Separate liquidity from profitability
+- **Observed need:** Local Works needs to see cash timing separately from profitability, including receivable status and partner payments due before customer receipts.
+- **Possible future capability:** Cash-inflow/outflow and receivables planning.
+- **Evidence:** A simulated positive-contribution project creates a negative intramonth cash position after its partner deposit precedes customer cash.
+- **Current workaround:** Dated fictional cash events and a configurable opening balance.
+
+### Authorize starts against capacity and cash
+- **Observed need:** Project starts depend on owner and partner capacity, support reserve, existing commitments, and safe cash—not merely a signed sale.
+- **Possible future capability:** Start authorization with capacity/cash checks.
+- **Evidence:** Marginal and cash-constrained deal exercises remain queued despite attractive standalone contribution.
+- **Current workaround:** Explicit deterministic start gates.
+
+### Forecast the cumulative support tail
+- **Observed need:** Support obligations accumulate across completed projects and can displace later selling.
+- **Possible future capability:** Forward support-load forecasting.
+- **Evidence:** Simulated routine hours increase with every completion and exceed plan under growth/stress.
+- **Current workaround:** Per-customer support-hour assumptions by period.
+
+### See pipeline and overload through time
+- **Observed need:** Pipeline weakness and owner overload are visible only across future periods.
+- **Possible future capability:** Pipeline coverage trends and multi-period capacity forecasts.
+- **Evidence:** Delivery-heavy growth suppresses sales effort, then produces a delayed pipeline cliff and repeated overload.
+- **Current workaround:** Twelve deterministic monthly snapshots.
+
+### Keep concentration multi-dimensional
+- **Observed need:** Customer concentration differs by revenue, contribution, workload, support, and receivables; customer diversity can still hide partner/vendor correlation.
+- **Possible future capability:** Multi-dimensional customer, partner, and vendor concentration view.
+- **Evidence:** The simulation's largest receivable and incident-work shares differ from revenue, while one vendor affects multiple customers.
+- **Current workaround:** Separate monthly largest-share measures.
+
+### Compare growth and stress before commitment
+- **Observed need:** Rising revenue can create operational failure, so portfolio decisions require scenarios rather than a maximum-revenue plan.
+- **Possible future capability:** Scenario and what-if planning.
+- **Evidence:** Growth revenue exceeds baseline while overload, queue, support, quality, and pipeline health worsen.
+- **Current workaround:** Baseline, conservative, growth, and stress configurations.
+
+### Persist monthly operating evidence
+- **Observed need:** Monthly business review requires comparable customer, pipeline, delivery, support, financial, capacity, concentration, risk, and decision metrics.
+- **Possible future capability:** Operating-period snapshots.
+- **Evidence:** Normal and overloaded review outputs need the same categories over time.
+- **Current workaround:** Generated monthly review text and Markdown template.
