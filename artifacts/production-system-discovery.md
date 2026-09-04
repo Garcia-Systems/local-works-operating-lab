@@ -940,3 +940,28 @@ These needs arise from fictional closeout training, not a database schema, scree
 
 **Observed need:** Project closeout should capture reusable knowledge without leaking customer-confidential information.
 **Possible future capability:** Reusable-asset / lessons register.
+
+## Chapter 27 discoveries — warranty, support, and new work
+
+These needs arise from fictional post-launch-boundary training, not a database schema, screen, API, or Laravel model.
+
+**Observed need:** Post-launch requests require structured classification before commercial treatment.
+**Possible future capability:** Support triage records.
+
+**Observed need:** Warranty evaluation must link back to requirements and acceptance history.
+**Possible future capability:** Warranty-to-project traceability.
+
+**Observed need:** Support entitlement differs by customer and project.
+**Possible future capability:** Support-plan and entitlement records.
+
+**Observed need:** Responsibility may belong to Local Works, the customer, a delivery partner, or a vendor.
+**Possible future capability:** Support responsibility routing.
+
+**Observed need:** Goodwill work consumes real owner and partner time.
+**Possible future capability:** No-charge support effort tracking.
+
+**Observed need:** Repeated support questions should feed documentation and product/process improvement.
+**Possible future capability:** Recurring-support-pattern detection.
+
+**Observed need:** Enhancements should become opportunities rather than invisible support work.
+**Possible future capability:** Support-to-opportunity conversion linkage.
