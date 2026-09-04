@@ -122,3 +122,43 @@ These possible capabilities arise from a fictional experiment design, not live m
 - **Frequency:** Five simulations; no real responses.
 - **Current workaround:** Record outcome, learning, follow-up, and stop decision in the exercise.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 4 observations
+
+These needs arise from an executable hypothetical funnel, not live acquisition data. They are possible capabilities, not UI, API, or database designs.
+
+### Preserve source and funnel entry
+
+- **Observed need:** Local Works needs to know where a prospect came from and where it entered the acquisition process because channels have different paths.
+- **Possible future capability:** Lead-source and funnel-entry tracking.
+- **Evidence:** Chapter 4 models website/content, personalized outreach, and referral paths with different entry stages.
+- **Frequency:** Three hypothetical paths; no live frequency.
+- **Current workaround:** Named `FunnelScenario` paths and artifacts.
+- **Production priority:** Unassigned pending real evidence.
+
+### Distinguish commercial lifecycle stages
+
+- **Observed need:** Lead, qualified lead, discovery, proposal, and sale cannot be treated as synonyms.
+- **Possible future capability:** Explicit commercial lifecycle stages and stage history.
+- **Evidence:** Compounded funnel arithmetic produces distinct counts at each stage.
+- **Frequency:** One executable training model; no live frequency.
+- **Current workaround:** `FunnelStage` and transition results.
+- **Production priority:** Unassigned pending real evidence.
+
+### Preserve metric provenance
+
+- **Observed need:** Conversion assumptions and outputs must retain whether they are hypothetical, observed, measured, or simulated.
+- **Possible future capability:** Historical funnel measurement with evidence provenance and cohort context.
+- **Evidence:** Every Chapter 4 transition retains an evidence type and simulations carry a non-evidence notice.
+- **Frequency:** Three hypothetical scenarios; no live frequency.
+- **Current workaround:** Evidence labels in Python and Markdown.
+- **Production priority:** Unassigned pending real evidence.
+
+### Track acquisition effort
+
+- **Observed need:** Owner effort occurs at research, outreach, qualification, discovery, and proposal stages even when cash cost is low.
+- **Possible future capability:** Effort tracking associated with acquisition activities and stages.
+- **Evidence:** Chapter 4 separately estimates hypothetical owner hours for three channel shapes.
+- **Frequency:** Three modeled scenarios; no actual time logs.
+- **Current workaround:** Stage-specific `OwnerEffort` assumptions.
+- **Production priority:** Unassigned pending real evidence.
