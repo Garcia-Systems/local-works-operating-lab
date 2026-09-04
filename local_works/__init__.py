@@ -8,6 +8,7 @@ from .hypothesis import (
     group_by_business_test,
     initial_hypotheses,
 )
+from .services import ServiceStage, ServiceStageDefinition, service_definition
 
 __all__ = [
     "BusinessHypothesis",
@@ -16,4 +17,7 @@ __all__ = [
     "SolutionPath",
     "group_by_business_test",
     "initial_hypotheses",
+    "ServiceStage",
+    "ServiceStageDefinition",
+    "service_definition",
 ]
