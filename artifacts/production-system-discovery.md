@@ -345,3 +345,45 @@ APIs, tables, framework models, or architecture.
 - **Frequency:** Four fictional requests.
 - **Current workaround:** `EvidenceRequest` records and a Markdown list.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 9 observations
+
+These possible needs come from one fictional current-state reconstruction, not
+live Local Works operations. They do not specify a production schema, UI, or
+workflow engine.
+
+### Represent current-state work step by step
+
+- **Observed need:** Local Works needs to preserve an ordered explanation of what currently happens from trigger through end condition.
+- **Possible future capability:** Structured current-state workflow representation.
+- **Evidence:** Chapter 9 reconstructs one Harbor Fitness happy path without designing a future state.
+- **Frequency:** One fictional exercise; no live operating frequency.
+- **Current workaround:** Small Python records and a version-controlled Markdown artifact.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Back workflow steps with evidence and timing
+
+- **Observed need:** Each step may need an actor, system/mechanism, evidence source/status, manual/automated state, and independently known or unknown active/wait time.
+- **Possible future capability:** Evidence-backed workflow steps with separate labor and elapsed-time fields.
+- **Evidence:** The exercise retains employee estimates, new training assumptions, and unknown platform-update, billing-check, and approval-wait durations.
+- **Frequency:** Eight fictional happy-path steps plus an exception.
+- **Current workaround:** Typed analytical records; unknown values remain null rather than zero.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve workflow relationships and exceptions
+
+- **Observed need:** A checklist alone cannot express decision branches, information movement, role/system handoffs, waiting, or exception paths.
+- **Possible future capability:** Workflow relationships beyond a simple checklist, including decisions, branches, handoffs, data movements, and exceptions.
+- **Evidence:** Chapter 9 records an eligibility branch, data re-entry, member/staff/manager handoffs, and manager approval.
+- **Frequency:** One fictional normal path and one modeled exception path.
+- **Current workaround:** Explicit related records in Python and labeled artifact sections.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Retain workflow validation state
+
+- **Observed need:** Workflow understanding changes as participants play it back and correct estimates, gaps, and conflicting accounts.
+- **Possible future capability:** Workflow validation status/history linked to evidence and validation questions.
+- **Evidence:** Harbor Fitness remains `PARTIALLY_VALIDATED` because timing, rules, ownership, and system behavior remain unresolved.
+- **Frequency:** One fictional validation state; no history yet.
+- **Current workaround:** Status enum, validation questions, and version control.
+- **Production priority:** Unassigned pending real operating evidence.
