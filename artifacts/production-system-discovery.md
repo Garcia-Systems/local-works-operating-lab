@@ -162,3 +162,43 @@ These needs arise from an executable hypothetical funnel, not live acquisition d
 - **Frequency:** Three modeled scenarios; no actual time logs.
 - **Current workaround:** Stage-specific `OwnerEffort` assumptions.
 - **Production priority:** Unassigned pending real evidence.
+
+## Chapter 5 observations
+
+These needs were exposed by hypothetical training arithmetic, not live Local Works acquisition data. They are operational observations and possible capabilities—not screen, API, database, or architecture designs.
+
+### Track both cash and owner acquisition effort
+
+- **Observed need:** Local Works needs to understand both attributable cash and owner effort spent acquiring customers; zero advertising spend does not eliminate acquisition cost.
+- **Possible future capability:** Acquisition activity cost and time tracking.
+- **Evidence:** Chapter 5's executable exercise produces materially different cash and fully loaded views for owner-heavy and cash-heavy hypothetical channels.
+- **Frequency:** Six hypothetical channel comparisons; no real activity measured.
+- **Current workaround:** Categorized `AcquisitionCost` and `OwnerTimeActivity` assumptions.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Retain costs in periods with no customer
+
+- **Observed need:** Acquisition costs occur even when no customer is acquired, and the resulting CAC is undefined rather than zero.
+- **Possible future capability:** Period-based acquisition-cost reporting with explicit undefined ratios.
+- **Evidence:** The zero-customer exercise retains $500 and 20 hypothetical hours while refusing to divide by zero.
+- **Frequency:** One hypothetical period; no live frequency.
+- **Current workaround:** `None` ratios and cumulative period arithmetic.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Trace economics to channel and funnel provenance
+
+- **Observed need:** Acquisition economics should remain traceable to a channel, funnel outcome, and whether inputs were simulated or observed.
+- **Possible future capability:** Channel-attributed cash and effort tracking with metric provenance.
+- **Evidence:** Stage-cost results consume Chapter 4 `FunnelResult` records and preserve their simulation notice and evidence type.
+- **Frequency:** One simulated funnel and six hypothetical channels; no live frequency.
+- **Current workaround:** Named immutable model records and explicit evidence labels.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Connect acquisition and customer economics eventually
+
+- **Observed need:** CAC alone cannot establish viability; Local Works eventually needs to compare acquisition cost with customer economic contribution.
+- **Possible future capability:** Customer-level acquisition economics connected to engagement economics.
+- **Evidence:** Chapter 5's payback preview gives opposing conclusions for the same hypothetical CAC under different hypothetical contribution values.
+- **Frequency:** One conceptual comparison; contribution has not been modeled or measured.
+- **Current workaround:** Record the dependency without calculating LTV, pricing, or contribution.
+- **Production priority:** Deferred until later operating chapters and real evidence.
