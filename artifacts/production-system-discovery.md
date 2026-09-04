@@ -965,3 +965,34 @@ These needs arise from fictional post-launch-boundary training, not a database s
 
 **Observed need:** Enhancements should become opportunities rather than invisible support work.
 **Possible future capability:** Support-to-opportunity conversion linkage.
+
+## Chapter 29 discoveries — recurring support economics
+
+These needs arise from fictional support-economics training, not a database schema, screen, API, billing system, or Laravel model.
+
+**Observed need:** Support economics require customer-level demand history and request mix.
+**Possible future capability:** Support usage aggregation by customer and request type.
+
+**Observed need:** Owner effort must remain separate from delivery-partner cost.
+**Possible future capability:** Owner-time and partner-cost support ledger.
+
+**Observed need:** Plans require explicit inclusion, exclusion, capacity, overage, and after-hours expectations.
+**Possible future capability:** Support-plan entitlement configuration.
+
+**Observed need:** Plans must be stress-tested against incidents and concurrent demand.
+**Possible future capability:** Support demand/capacity forecasting.
+
+**Observed need:** Recurring profitability requires monthly revenue, cost, contribution, and owner-time-adjusted contribution.
+**Possible future capability:** Customer support economics dashboard.
+
+**Observed need:** Goodwill and warranty burdens must remain visible and distinct.
+**Possible future capability:** Goodwill/warranty effort categorization.
+
+**Observed need:** One customer may consume disproportionate support capacity.
+**Possible future capability:** Support burden concentration analysis.
+
+**Observed need:** Partner availability constrains safe support promises.
+**Possible future capability:** Support delivery-capability records.
+
+**Observed need:** A recommendation may legitimately reject a recurring plan.
+**Possible future capability:** Support-plan decision records.
