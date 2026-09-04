@@ -862,3 +862,28 @@ These are needs revealed by fictional delivery-control training, not a database 
 
 **Observed need:** Local Works customer communication, coordination, decision, and review time must be visible.
 **Possible future capability:** Owner effort tracking by project.
+
+## Chapter 24 discoveries — scope creep and change requests
+
+These needs arise from fictional change-control training, not a database schema, screen, API, or Laravel model.
+
+**Observed need:** Not every project change is customer-paid scope expansion.
+**Possible future capability:** Typed change classification.
+
+**Observed need:** Every material change must compare against an approved baseline.
+**Possible future capability:** Change-to-baseline linkage.
+
+**Observed need:** Changes affect effort, delivery cost, customer price, schedule, risk, customer effort, and owner time differently.
+**Possible future capability:** Structured change impact analysis.
+
+**Observed need:** Approved changes create new scope and requirement baselines without erasing history.
+**Possible future capability:** Versioned project baselines.
+
+**Observed need:** Small absorbed changes can accumulate into meaningful owner and delivery burden.
+**Possible future capability:** Absorbed-change effort tracking.
+
+**Observed need:** Deferred ideas should survive without entering active scope.
+**Possible future capability:** Deferred opportunity/backlog linkage.
+
+**Observed need:** Defect/correction disputes require evidence from requirements, acceptance, and decision records.
+**Possible future capability:** Change classification with evidence traceability.
