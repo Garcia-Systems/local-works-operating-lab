@@ -72,7 +72,12 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 - **Chapter 27 — Warranty vs Support vs New Work:** begins **Part VII — Own the Relationship After Launch** with evidence-led post-launch triage, operational warranty assessment, support entitlement, responsibility and commercial boundaries, explicit goodwill/owner effort, and fair routing to support, vendors, incident response, or new-project discovery.
 - **Chapter 29 — Recurring Support Economics:** compares bounded pay-as-you-go, monthly, prepaid, and hybrid support economics; preserves warranty, goodwill, customer value, incident reserve, owner capacity, and partner/vendor risk; and permits no recurring plan as the best answer.
 - **Chapter 30 — Expansion, Retention, and Referrals:** completes **Part VII — Own the Relationship After Launch** with evidence-led relationship health, value review, qualified expansion and leave-alone decisions, ethical referral/public-proof boundaries, churn learning, and cumulative relationship economics.
-- **Chapter 31 — IN PROGRESS:** **31A portfolio foundation complete** — a weekly multi-customer view unifies work, finite owner/delivery/support capacity, pipeline separation, concentration, conflicts, gated starts, and owner-dependency analysis. The 12-month scenarios and detailed cash-flow work remain for 31B.
+- **Chapter 31 — The Local Works Customer Portfolio (COMPLETE):** 31A's weekly multi-customer foundation and 31B's deterministic 12-month simulation join revenue, contribution, cash timing, receivables, partner payments, exposure, support tails, pipeline coverage, gated starts, concentration, stress tests, operating reviews, and a qualified portfolio verdict—without deciding final owner income or business viability.
+
+### Part VIII — Test the business through time
+
+- **Chapter 31:** The Local Works Customer Portfolio (complete).
+- **Chapter 32:** Owner Income and the Final Local Works Examination (not yet implemented).
 
 ### Part VI summary
 
@@ -126,6 +131,7 @@ python scripts/run_chapter_27.py
 python scripts/run_chapter_29.py
 python scripts/run_chapter_30.py
 python scripts/run_chapter_31a.py
+python scripts/run_chapter_31b.py
 python -m pytest
 ```
 
