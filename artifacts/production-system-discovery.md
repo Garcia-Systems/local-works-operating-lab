@@ -809,3 +809,31 @@ These needs come from fictional operational-control analysis, not database schem
 **Possible future capability:** Project decision-authority and escalation mapping.
 
 These are operating discoveries, not a database schema, screen, API, or Laravel model.
+
+## Chapter 22 discoveries — business-to-technical translation
+
+These needs arise from fictional translation training, not a database schema, screen, API, or Laravel model.
+
+**Observed need:** Customer statements must remain traceable through technical implementation.
+
+**Possible future capability:** Business-to-technical translation records.
+
+**Observed need:** Business questions and technical questions have different owners and evidence paths.
+
+**Possible future capability:** Typed project question register.
+
+**Observed need:** Technical work should link to requirements, acceptance, or an explicit delivery/operational risk.
+
+**Possible future capability:** Technical-task justification links.
+
+**Observed need:** Unimplemented requirements and unjustified technical work should be visible.
+
+**Possible future capability:** Translation-gap detection.
+
+**Observed need:** Technical constraints can force deliberate scope or solution reconsideration.
+
+**Possible future capability:** Constraint-driven decision escalation.
+
+**Observed need:** Technical decisions need lightweight context, options, rationale, requirement, and risk links.
+
+**Possible future capability:** Technical decision record.
