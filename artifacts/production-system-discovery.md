@@ -294,3 +294,54 @@ requirements.
 - **Frequency:** Six fictional examples plus a monitor category; no live outcomes.
 - **Current workaround:** `OpportunityDecision` values with required rationale.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 8 observations
+
+These needs were exposed by a deterministic fictional discovery session, not
+live customer work. They describe possible future capabilities only—not screens,
+APIs, tables, framework models, or architecture.
+
+### Attribute discovery evidence to participants
+
+- **Observed need:** Discovery information comes from multiple participants whose roles and accounts must remain visible.
+- **Possible future capability:** Associate statements and evidence with their participant/source.
+- **Evidence:** Chapter 8 preserves separate owner/general-manager and front-desk accounts.
+- **Frequency:** Two fictional participants; no live operating frequency.
+- **Current workaround:** Source fields in Python records and labeled Markdown sections.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve value provenance
+
+- **Observed need:** Estimated values must remain distinguishable from measured values and unknowns.
+- **Possible future capability:** Value provenance/evidence classification including value, unit, source, and notes.
+- **Evidence:** Conflicting weekly-frequency estimates remain `ESTIMATE`; no measured value is manufactured.
+- **Frequency:** Several fictional estimates; no live measurements.
+- **Current workaround:** `EvidenceValue` and explicit artifact labels.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Retain contradictions and unresolved questions
+
+- **Observed need:** Stakeholders can give contradictory accounts that must not be silently reconciled.
+- **Possible future capability:** Preserve conflicting evidence, its sources, the unresolved question, and evidence needed.
+- **Evidence:** Manager and employee frequency estimates are retained separately and flagged for log validation.
+- **Frequency:** One fictional conflict.
+- **Current workaround:** `EvidenceConflict` plus narrative notes.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Keep structured discovery context
+
+- **Observed need:** Discovery identifies systems, policies, constraints, and exceptions around an opportunity without yet designing a solution.
+- **Possible future capability:** Structured discovery context connected to an opportunity.
+- **Evidence:** Chapter 8 records three generic systems, an eligibility policy, exceptions, and unknown platform/access capabilities.
+- **Frequency:** One fictional session.
+- **Current workaround:** Small Python records and Markdown tables.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Track evidence requests
+
+- **Observed need:** Missing information creates explicit evidence requests rather than assumed facts.
+- **Possible future capability:** Evidence-request tracking with need, possible source, and unresolved question.
+- **Evidence:** Chapter 8 requests volume, handling-time, complaint, and correction evidence without accessing it.
+- **Frequency:** Four fictional requests.
+- **Current workaround:** `EvidenceRequest` records and a Markdown list.
+- **Production priority:** Unassigned pending real operating evidence.
