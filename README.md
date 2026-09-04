@@ -74,16 +74,15 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 - **Chapter 30 — Expansion, Retention, and Referrals:** completes **Part VII — Own the Relationship After Launch** with evidence-led relationship health, value review, qualified expansion and leave-alone decisions, ethical referral/public-proof boundaries, churn learning, and cumulative relationship economics.
 - **Chapter 31 — The Local Works Customer Portfolio (COMPLETE):** 31A's weekly multi-customer foundation and 31B's deterministic 12-month simulation join revenue, contribution, cash timing, receivables, partner payments, exposure, support tails, pipeline coverage, gated starts, concentration, stress tests, operating reviews, and a qualified portfolio verdict—without deciding final owner income or business viability.
 
-### Part VIII — Test the business through time
+### Part VIII — Turn One Project into a Business (COMPLETE)
 
 - **Chapter 31:** The Local Works Customer Portfolio (complete).
-- **Chapter 32 — IN PROGRESS:** 32A complete (capstone engine and 36-month
-  baseline); 32B complete (scenario analysis, owner income, break-even,
-  sensitivity, and Monte Carlo); 32C pending (final verdict, real-world
-  validation, and production-application requirements).
-  - **32A complete:** Capstone engine + 36-month baseline.
-  - **32B complete:** Scenario analysis + owner income + break-even + sensitivity + Monte Carlo.
-  - **32C pending:** Final verdict + validation plan + production application requirements.
+- **Chapter 32 — COMPLETE:** Owner Income and the Final Local Works Examination.
+  - **32A:** Capstone engine and 36-month baseline.
+  - **32B:** Scenario and owner-economics analysis.
+  - **32C:** Final verdict, validation plan, and production software gate.
+
+**Part VIII — COMPLETE. Initial Local Works Operating Lab — COMPLETE.**
 
 ### Part VI summary
 
@@ -140,6 +139,7 @@ python scripts/run_chapter_31a.py
 python scripts/run_chapter_31b.py
 python scripts/run_chapter_32a.py
 python scripts/run_chapter_32b.py
+python scripts/run_chapter_32c.py
 python -m pytest
 ```
 
@@ -165,3 +165,29 @@ The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses an
 ## Intentionally absent
 
 There is no web application, API, authentication, CRM, dashboard, portal, database, ORM, customer CRUD, pricing engine, proposal engine, or speculative production feature list. Harbor Fitness is a fictional running case; its artifacts and audit do not select or design a solution.
+
+## Complete chapter index
+
+### PART I — BUILD THE BUSINESS BEFORE SELLING
+0 The Local Works Experiment · 1 What Are We Actually Selling? · 2 Ideal Customer Hypothesis · 3 First Market Experiment
+
+### PART II — ACQUIRE THE FIRST LEAD
+4 Acquisition Funnel · 5 Customer Acquisition Economics · 6 Digital Friction Audit · 7 Audit to Opportunity
+
+### PART III — SELL THE RIGHT PROBLEM
+8 Discovery · 9 Reconstruct the Current Workflow · 10 Economics Behind the Pain · 11 Qualify the Opportunity
+
+### PART IV — DESIGN THE RIGHT SOLUTION
+12 Choose the Simplest Sensible Solution · 13 Solution Economics · 14 Scope the Engagement · 15 Price the Engagement · 16 Proposal and Negotiation
+
+### PART V — ASSEMBLE THE DELIVERY SYSTEM
+17 Close Without Disaster · 18 Find the Delivery Path · 19 Request and Compare Technical Estimates · 20 Delivery Risk and Ownership
+
+### PART VI — DELIVER THE FIRST PROJECT
+21 Project Kickoff and Requirements · 22 Business-to-Technical Translation · 23 Milestones and Project Control · 24 Scope Creep and Change Requests · 25 QA and Customer Acceptance · 26 Launch, Final Payment, and Project Economics
+
+### PART VII — OWN THE RELATIONSHIP AFTER LAUNCH
+27 Warranty vs Support vs New Work · 28 Incident Response and Support Escalation · 29 Recurring Support Economics · 30 Expansion, Retention, and Referrals
+
+### PART VIII — TURN ONE PROJECT INTO A BUSINESS
+31 The Local Works Customer Portfolio · 32 Owner Income and the Final Local Works Examination

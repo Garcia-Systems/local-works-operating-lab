@@ -1,8 +1,8 @@
 # Chapter 32 — Owner Income and the Final Local Works Examination
 
-> **IN PROGRESS after 32B.** Part A built the fictional baseline engine. Part B
-> adds owner economics, scenarios, break-even, sensitivity, and Monte Carlo.
-> Part C—and therefore the final business verdict—remains pending.
+> **COMPLETE.** Part A built the fictional baseline engine, Part B added owner
+> economics and adverse-case analysis, and Part C makes the evidence-limited
+> business verdict, validation plan, and independent production-software gate.
 > The unchanged Part A result itself does not calculate owner income; Part B
 > applies a separate compensation analysis to that result.
 
@@ -171,12 +171,12 @@ Cash is the present baseline constraint because the modeled intramonth minimum i
 negative. Partner fragility and a 21-project ending queue are major warnings too.
 This is a bottleneck finding, not a final business verdict.
 
-## 31. What remains for the final examination
+## 31. What Part C examines
 
-32B now supplies scenario comparison, owner-income and break-even work,
-sensitivity, Monte Carlo, model alternatives, and a bounded lever test. 32C still
-owns the final verdict, real-world validation plan, and production-application
-requirements. No final happy ending is asserted.
+32B supplies scenario comparison, owner-income and break-even work, sensitivity,
+Monte Carlo, model alternatives, and a bounded lever test. 32C consumes those
+objects for a final verdict, real-world validation plan, and capability-level
+production gate. No happy ending is assumed.
 
 ## 32. Owner income is not revenue
 
@@ -284,3 +284,61 @@ Part B produces evidence about robustness and owner economics. It deliberately
 does not establish final success/failure conditions, prioritize real-world
 evidence gaps, create a validation plan, summarize production requirements,
 authorize a website, or conclude the book. Those decisions remain in 32C.
+
+## 45. The final scorecard
+
+The scorecard keeps 22 dimensions visible and preserves `UNKNOWN`; it has no hidden composite. The simulation describes acceptable modeled demand, sales, and project economics, mixed delivery/support, weak cash and partner resilience, and many dimensions with no genuine observation. Evidence quality itself is weak because it is simulation-only.
+
+## 46. Final owner-income conclusion
+
+The fictional reserve-first draws are $21,865, $99,773, and $71,868 in Years 1–3. They require modeled average/peak workloads of 11.1/18.5 hours per week, but draws are volatile, engine cash reaches -$11,630, a large queue remains, and partner dependency persists. Income quality is therefore **MIXED**, not proven attractive income.
+
+## 47. Final business verdict
+
+The primary verdict is **FRAGILE**. Qualified demand is unvalidated; support must remain bounded; delivery-partner dependency must be reduced; working-capital reserve and payment timing require validation. The preferred current hypothesis is a bounded side practice, not a proven part-time or full-time business.
+
+## 48. Conditions for success and failure
+
+Success requires tested qualified lead flow, healthy project contribution, bounded owner project hours and support, protected sales time, gated starts, partner availability, and enough cash for the modeled trough. Failure occurs if demand/conversion falls, price declines or cost rises, support/concurrency consumes the owner, collections slip, or a partner disappears. Failed scenarios are valuable because they identify the assumption, stage, bottleneck, and corrective lever before real waste.
+
+## 49. Evidence quality: simulation is not proof
+
+The evidence level is **SIMULATION_ONLY**. A passing simulation says only that the operating model appears coherent under tested assumptions. It does not mean customers will buy, partners will quote the assumed costs, support will match the model, income will occur, or Local Works is proven. Simulation frequencies are not real-world probabilities.
+
+## 50. Evidence gaps and experiments
+
+Close rate, price, delivery cost, qualification, owner effort, support, incidents, and collection timing need genuine observations. The sequence is: run bounded public audits; measure progression; test one bounded proposal; request comparable delivery estimates; time one small engagement; observe its post-launch tail; and record payment timing. Each experiment must declare scope, cost, evidence, success/failure signals, and its resulting decision.
+
+## 51. The first real customer
+
+One small, bounded, low-risk, limited-integration engagement should test the problem, willingness to pay, simplest adequate path, delivery estimate, owner discovery and project-management hours, quality, payment behavior, and support tail. The model does not prescribe an exact real price.
+
+## 52. Production software is a separate gate
+
+The business verdict is **FRAGILE**; the software verdict is **MORE_BUSINESS_VALIDATION_FIRST**. Local Works can be ready for manual customer operation while remaining unready for a production application. These conclusions must never be collapsed.
+
+## 53. Dogfooding the philosophy
+
+CRM, project tracking, file storage, scheduling, audit forms, proposals, support intake, customer updates, partner coordination, and cash tracking should begin with configured existing tools and documents. Reporting may be automated only after repetition. A customer portal and custom back office should be left alone for now. Configure, integrate, automate, custom build, and leave alone are decisions—not a mandatory progression.
+
+## 54. Public website versus customer portal
+
+A small truthful public site may eventually contain Home, How It Works, Digital Friction Audit, Capabilities, and Contact. It must not show fake logos, testimonials, case studies, percentage improvements, savings, “trusted by” claims, or partner relationships. Harbor Fitness is fictional. A real case study needs permission, measured outcomes, accurate attribution, and appropriate confidentiality. A portal is premature.
+
+## 55. Manual operation is allowed
+
+One customer can be served without a custom portal through a contact path, audit and discovery documents, a proposal, existing project tracking, shared files, calendar, manual decision/change logs, and a bounded support email. This is the correct low-commitment validation path, not operational failure.
+
+## 56. What the lab proved
+
+The lab proved only that an operating lifecycle can be modeled coherently, major economic and capacity risks can be identified, the hypothesis can be tested across scenarios, and capability needs can be derived from operations. It did **not** prove Local Works.
+
+## 57. What the lab did not prove
+
+It did not prove real demand, willingness to pay, close rate, delivery pricing, implementation effort, presales or project-management effort, support burden, incident rate, retention, expansion, referrals, payment timing, or owner income.
+
+## 58. What should happen next
+
+Run a bounded batch of public, evidence-only Digital Friction Audits and record qualified progression. Replace one high-sensitivity assumption with real evidence before expanding commitment. Do not build everything.
+
+Local Works should earn the right to build software for customers, and it should earn the right to build software for itself.

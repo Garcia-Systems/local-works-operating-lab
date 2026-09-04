@@ -94,7 +94,7 @@ def test_operating_models_differ_and_lever_is_bounded():
 def test_32b_boundaries_remain_explicit():
     text=Path("book/32-owner-income-and-final-examination.md").read_text()
     script=Path("scripts/run_chapter_32b.py").read_text()
-    assert "IN PROGRESS" in text and "32C" in text
+    assert "COMPLETE" in text and "32C" in text
     assert "No final verdict" in script
     assert not Path("artisan").exists()
     assert "production requirements are produced" in script

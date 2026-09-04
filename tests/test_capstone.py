@@ -103,4 +103,4 @@ def test_part_a_boundaries_are_explicit_and_no_production_app_exists():
     assert not hasattr(result, "monte_carlo")
     assert not __import__("pathlib").Path("artisan").exists()
     text = open("book/32-owner-income-and-final-examination.md").read()
-    assert "IN PROGRESS" in text and "does not calculate owner income" in text
+    assert "COMPLETE" in text and "Part A result itself does not calculate owner income" in text
