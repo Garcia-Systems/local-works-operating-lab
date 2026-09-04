@@ -485,3 +485,52 @@ These are operational needs exposed by fictional qualification work, not specifi
 - **Frequency:** Three fictional estimates.
 - **Current workaround:** Assessment field and written next action.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 12 observations
+
+These needs come from one fictional solution-selection exercise. They do not specify a production database, screen, API, or implementation framework.
+
+### Compare multiple alternatives
+
+- **Observed need:** One opportunity may have multiple competing solution alternatives.
+- **Possible future capability:** Store and compare alternatives under an opportunity.
+- **Evidence:** Harbor Fitness compares configure, integrate, automate, custom-build, and leave-alone responses without assuming each is viable.
+- **Frequency:** One fictional comparison.
+- **Current workaround:** Typed records and a version-controlled Markdown comparison.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Track assumptions and capability validation
+
+- **Observed need:** Alternatives depend on assumptions and capability questions whose answers may remain unknown.
+- **Possible future capability:** Solution-assumption and capability-validation tracking.
+- **Evidence:** Platform configuration, API, event, access, policy, and adoption questions remain explicitly `UNKNOWN` with bounded validation methods.
+- **Frequency:** Five fictional assumptions and four artifact questions.
+- **Current workaround:** Assumption register and typed capability questions.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Classify solution paths
+
+- **Observed need:** Solutions need explicit configure, integrate, automate, custom-build, and leave-alone paths.
+- **Possible future capability:** Solution-path classification.
+- **Evidence:** The alternatives retain distinct paths even where their potential outcomes overlap.
+- **Frequency:** Five paths in one fictional assessment.
+- **Current workaround:** Chapter 0 enum reused by the Chapter 12 model.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Preserve changing decisions
+
+- **Observed need:** A preferred solution may change as assumptions are validated.
+- **Possible future capability:** Decision history and alternative-status history.
+- **Evidence:** Harbor Fitness states how native support, interfaces, custom-build gate evidence, or modest economics would change direction.
+- **Frequency:** One fictional decision with four change conditions.
+- **Current workaround:** Explicit rationale and Git history.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Explain custom-build justification
+
+- **Observed need:** Local Works must explain why simpler adequate options were rejected before recommending custom work.
+- **Possible future capability:** Decision-rationale and custom-build-justification record.
+- **Evidence:** Nine visible gates prevent the requested member portal from becoming an automatic recommendation.
+- **Frequency:** One executable gate and fictional application.
+- **Current workaround:** Typed justification and written rationale.
+- **Production priority:** Unassigned pending real operating evidence.
