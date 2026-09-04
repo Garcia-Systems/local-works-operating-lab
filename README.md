@@ -44,6 +44,7 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 
 - **Chapter 0 — The Local Works Experiment:** establishes the unproven business hypotheses and evidence language.
 - **Chapter 1 — What Are We Actually Selling?:** separates customer requests, validated problems, service stages, technical solutions, delivery, and ongoing support.
+- **Chapter 2 — The Ideal Customer Hypothesis:** uses explicit positive, negative, unknown, and disqualifying signals to prioritize fictional prospects without claiming a validated market.
 
 ## Run the chapters
 
@@ -52,10 +53,11 @@ Python 3.11 or newer is required.
 ```bash
 python scripts/run_chapter_00.py
 python scripts/run_chapter_01.py
+python scripts/run_chapter_02.py
 python -m pytest
 ```
 
-The exercise prints the initial hypotheses grouped by business test and distinguishes beliefs from observations and measurements.
+The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses and service stages, while Chapter 2 compares fictional prospects and preserves unknowns rather than treating them as negative facts.
 
 ## Repository map
 

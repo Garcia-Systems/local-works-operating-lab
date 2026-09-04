@@ -51,3 +51,34 @@ These are possible future capabilities revealed by modeling and running the Chap
 - **Frequency:** Present across five modeled stages; not measured in live operations.
 - **Current workaround:** Write the decision and rationale in the relevant operating artifact.
 - **Production priority:** Unassigned pending operating evidence.
+
+## Chapter 2 observations
+
+These observations arise from the Chapter 2 fictional qualification exercise. They are not database, interface, or workflow specifications, and their production priority remains unsupported by live evidence.
+
+### Preserve customer-fit reasoning
+
+- **Observed need:** Local Works needs to preserve why a prospect appears promising, weak, uncertain, or disqualified rather than retaining only a lead status.
+- **Possible future capability:** Customer-fit assessment with positive signals, negative signals, unknowns, and hard disqualifiers.
+- **Evidence:** The six fictional prospects reach different conclusions through independently visible fit dimensions; the corporate location retains strong problem signals alongside weak authority fit.
+- **Frequency:** Present across one Chapter 2 exercise; not measured in live operations.
+- **Current workaround:** Use the readable assessment model and customer-fit artifacts.
+- **Production priority:** Unassigned pending operating evidence.
+
+### Keep qualification unknowns visible
+
+- **Observed need:** Missing budget, authority, burden, urgency, and feasibility information must remain open questions rather than becoming negative facts.
+- **Possible future capability:** Explicit opportunity unknowns/questions retained alongside known observations.
+- **Evidence:** Harbor Fitness remains promising while multiple unknowns are preserved; the exercise demonstrates that UNKNOWN is different from BAD.
+- **Frequency:** Unknowns occur in five non-disqualified fictional profiles; not measured with real prospects.
+- **Current workaround:** Record unknown dimensions explicitly in the assessment and artifact.
+- **Production priority:** Unassigned pending operating evidence.
+
+### Separate fit from sales stage
+
+- **Observed need:** A prospect can be interesting enough for an audit without being qualified for discovery, a proposal, or a project.
+- **Possible future capability:** Separate customer-fit assessment from sales-stage status.
+- **Evidence:** Harbor Fitness is “PROMISING / REQUIRES VALIDATION,” and the recommended action is an audit rather than a sale.
+- **Frequency:** Once in the running fictional case; not measured in live operations.
+- **Current workaround:** State fit and next action separately in operating artifacts.
+- **Production priority:** Unassigned pending operating evidence.
