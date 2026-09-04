@@ -1099,3 +1099,25 @@ design, database schema, screen, or API specification.
 
 **Observed need:** Cash failure can occur despite positive contribution.
 **Possible future capability:** Cash-reserve and working-capital warning.
+
+## Chapter 32B discoveries
+
+These are needs observed in fictional analysis—not schemas, screens, or APIs.
+
+**Observed need:** Owner income cannot be inferred from business revenue.
+**Possible future capability:** Owner compensation and reserve planning.
+
+**Observed need:** Scenario comparison changes operating decisions.
+**Possible future capability:** What-if scenario analysis.
+
+**Observed need:** Business viability is highly sensitive to a few assumptions.
+**Possible future capability:** Assumption sensitivity tracking.
+
+**Observed need:** Support mode materially affects owner capacity and income stability.
+**Possible future capability:** Operating-model comparison.
+
+**Observed need:** Break-even thresholds guide real-world validation priorities.
+**Possible future capability:** Threshold and break-even analysis.
+
+**Observed need:** Uncertainty should be represented without pretending prediction certainty.
+**Possible future capability:** Simulation ranges and scenario frequencies.
