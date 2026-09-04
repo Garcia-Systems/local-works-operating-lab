@@ -49,6 +49,7 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 - **Chapter 4 — The Acquisition Funnel:** models hypothetical, channel-specific progression, expected versus simulated outcomes, bottlenecks, sensitivity, quality, and owner effort without claiming sales evidence.
 - **Chapter 5 — Customer Acquisition Economics:** connects attributable cash, owner effort, and Chapter 4 funnel outcomes; safely handles zero-customer periods and compares hypothetical channel economics without selecting a winner.
 - **Chapter 6 — The Digital Friction Audit:** maps adaptable customer and employee workflows, separates observed facts from friction hypotheses, preserves unknowns, and recommends whether further investigation is warranted without selecting a solution.
+- **Chapter 7 — From Audit to Opportunity:** applies a transparent opportunity gate, separates problem potential from commercial fit, groups only plausibly related findings, and permits discovery, simple, referral, leave-alone, and disqualification exits without approving a project.
 
 ## Run the chapters
 
@@ -62,10 +63,11 @@ python scripts/run_chapter_03.py
 python scripts/run_chapter_04.py
 python scripts/run_chapter_05.py
 python scripts/run_chapter_06.py
+python scripts/run_chapter_07.py
 python -m pytest
 ```
 
-The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses and service stages, while Chapter 2 compares fictional prospects and preserves unknowns rather than treating them as negative facts. Chapter 3 separates public observations from inferred problems, accounts for cash and owner time, and treats every channel as unvalidated. Chapter 4 distinguishes activity from commercial progress and labels all funnel arithmetic and simulations as hypothetical rather than evidence. Chapter 5 separates cash CAC from owner time and fully loaded CAC, retains prior-period failures, and leaves zero-denominator metrics undefined. Chapter 6 records customer and operational friction without turning incomplete evidence into low significance or an implementation recommendation.
+The exercises expose their reasoning: Chapters 0 and 1 distinguish hypotheses and service stages, while Chapter 2 compares fictional prospects and preserves unknowns rather than treating them as negative facts. Chapter 3 separates public observations from inferred problems, accounts for cash and owner time, and treats every channel as unvalidated. Chapter 4 distinguishes activity from commercial progress and labels all funnel arithmetic and simulations as hypothetical rather than evidence. Chapter 5 separates cash CAC from owner time and fully loaded CAC, retains prior-period failures, and leaves zero-denominator metrics undefined. Chapter 6 records customer and operational friction without turning incomplete evidence into low significance or an implementation recommendation. Chapter 7 decides whether that friction warrants more attention while exposing signals, uncertainty, fit, and non-project exits.
 
 ## Repository map
 
