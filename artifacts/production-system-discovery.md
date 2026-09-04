@@ -659,3 +659,35 @@ These are operational needs revealed by a fictional exercise, not database, scre
 ### Separate lifecycle events
 **Observed need:** Acceptance in principle is distinct from contract execution, deposit receipt, authorization, and project start.
 **Possible future capability:** Separate proposal, contract, payment, and project lifecycle states.
+
+## Chapter 17 — Close without disaster
+
+These are needs revealed by fictional commercial-close training, not database schemas, screens, APIs, or Laravel models.
+
+### Separate closing lifecycle states
+**Observed need:** Customer acceptance, agreement execution, payment, and authorization are distinct lifecycle states.
+**Possible future capability:** Commercial-close state machine.
+
+### Freeze the accepted commercial source
+**Observed need:** Accepted proposal and scope versions, pricing, payment, assumptions, and exclusions must be frozen and referenced.
+**Possible future capability:** Commercial source-of-truth version linking.
+
+### Record authority
+**Observed need:** Decision-maker, budget-owner, and authorized-signer identities and authority evidence cannot be inferred from enthusiasm.
+**Possible future capability:** Decision-maker/budget-owner/authorized-signer tracking.
+
+### Stage preconditions
+**Observed need:** Project conditions block different stages: authorization, implementation, or launch.
+**Possible future capability:** Stage-specific precondition register.
+
+### Control commitments and coverage
+**Observed need:** Local Works must identify refundable and non-refundable commitments and avoid spending before deliberate funding/authorization decisions.
+**Possible future capability:** Commitment authorization and cash-coverage tracking.
+
+### Surface unresolved commercial issues
+**Observed need:** Ownership, subcontractor, third-party, access, scope, and capacity questions can block close or remain visible risks.
+**Possible future capability:** Commercial risk/issues register with blocking classification.
+
+### Require explicit start authorization
+**Observed need:** A safe project transition requires an explicit authorization that records blockers and reasoning while remaining separate from implementation.
+**Possible future capability:** Start-authorization record with blocker reasoning.
