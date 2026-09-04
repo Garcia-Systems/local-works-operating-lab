@@ -191,3 +191,19 @@ There is no web application, API, authentication, CRM, dashboard, portal, databa
 
 ### PART VIII — TURN ONE PROJECT INTO A BUSINESS
 31 The Local Works Customer Portfolio · 32 Owner Income and the Final Local Works Examination
+
+## POST-LAB VALIDATION
+
+### Validation Sprint 1: First Real-World Friction Test
+
+**Status: READY TO EXECUTE MANUALLY**
+
+The textbook is complete through Chapter 32. Post-lab validation now exists to replace simulation assumptions with attributable real evidence; it is **not Chapter 33**, and it does not authorize a production application. Sprint 1 manually researches five target businesses, completes three public-only Digital Friction Audits, and prepares up to three personalized outreach attempts. Fictional demonstration data must never be entered as real evidence.
+
+Run the mechanics-only demonstration (it performs no website access and sends no outreach):
+
+```bash
+python scripts/run_validation_sprint_01.py
+```
+
+Use the manual templates in `artifacts/validation/` to score targets, preserve UNKNOWN, distinguish observation from inference, record actual stage counts and time, and update simulation assumptions only after real evidence has been collected with provenance and a denominator.
