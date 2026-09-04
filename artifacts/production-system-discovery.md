@@ -912,3 +912,31 @@ These needs arise from fictional QA training, not a database schema, screen, API
 
 **Observed need:** Customer-found avoidable defects are a meaningful quality signal.
 **Possible future capability:** QA-escape tracking.
+
+## Chapter 26 discoveries — launch, closeout, and actual economics
+
+These needs arise from fictional closeout training, not a database schema, screen, API, or Laravel model.
+
+**Observed need:** Acceptance and production launch are separate project states.
+**Possible future capability:** Launch-readiness and launch-event tracking.
+
+**Observed need:** Projects need rollback/reversal and verification planning.
+**Possible future capability:** Launch checklist and verification records.
+
+**Observed need:** Commercial completion requires payment status separate from project delivery status.
+**Possible future capability:** Commercial closeout/payment milestone tracking.
+
+**Observed need:** Estimated project economics must later reconcile to actual costs and owner effort.
+**Possible future capability:** Estimate-vs-actual project economics.
+
+**Observed need:** Cash timing can make a profitable project financially dangerous.
+**Possible future capability:** Project cash-exposure timeline.
+
+**Observed need:** Customer value cannot be claimed until measured.
+**Possible future capability:** Post-launch value-realization measurement.
+
+**Observed need:** Delivery-partner actual performance should inform future partner selection.
+**Possible future capability:** Historical delivery-partner performance evidence.
+
+**Observed need:** Project closeout should capture reusable knowledge without leaking customer-confidential information.
+**Possible future capability:** Reusable-asset / lessons register.
