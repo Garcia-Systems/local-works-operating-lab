@@ -723,3 +723,35 @@ These are operational needs revealed by fictional delivery-path training, not da
 ### Reuse observed performance
 **Observed need:** Actual partner performance should eventually become reusable evidence for future projects without inventing history.
 **Possible future capability:** Historical delivery-partner performance record.
+
+## Chapter 19 — Request and compare technical estimates
+
+These are needs revealed by fictional estimate-comparison training, not database schemas, screens, APIs, or Laravel models.
+
+### Preserve a common scope baseline
+**Observed need:** All delivery candidates should estimate against a defined scope version, with any alternate estimated scope made visible.
+**Possible future capability:** Estimate request linked to immutable scope version.
+
+### Preserve estimate reasoning
+**Observed need:** Technical estimates contain components, assumptions, exclusions, ranges, risks, validity, and confidence—not only price.
+**Possible future capability:** Structured technical estimate records.
+
+### Retain clarification history
+**Observed need:** Estimate clarifications can materially change cost, scope alignment, status, and comparability.
+**Possible future capability:** Estimate clarification history.
+
+### Normalize before comparing
+**Observed need:** Raw bids must be normalized for scope, missing work, one-time third-party costs, effort, timeline, and risk before fair comparison.
+**Possible future capability:** Estimate-comparison and normalization workspace.
+
+### Separate commercial and delivery lifecycles
+**Observed need:** Delivery estimates and customer/proposal prices must remain distinct.
+**Possible future capability:** Separate delivery-estimate and customer-pricing lifecycle.
+
+### Learn from later delivery
+**Observed need:** Actual delivery cost, hours, and duration should later be compared with the original estimate without inventing history now.
+**Possible future capability:** Estimated-versus-actual partner performance metrics.
+
+### Route estimate findings backward
+**Observed need:** Poor, divergent, over-scoped, or incomplete estimates may require solution or scope reconsideration rather than provider selection.
+**Possible future capability:** Estimate-decision links to solution and scope revision.
