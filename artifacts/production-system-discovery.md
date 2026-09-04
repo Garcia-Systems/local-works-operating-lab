@@ -691,3 +691,35 @@ These are needs revealed by fictional commercial-close training, not database sc
 ### Require explicit start authorization
 **Observed need:** A safe project transition requires an explicit authorization that records blockers and reasoning while remaining separate from implementation.
 **Possible future capability:** Start-authorization record with blocker reasoning.
+
+## Chapter 18 — Find the delivery path
+
+These are operational needs revealed by fictional delivery-path training, not database schemas, screens, APIs, or Laravel models.
+
+### Derive delivery requirements
+**Observed need:** Delivery requirements should be derived from the selected solution and scope before candidates are considered.
+**Possible future capability:** Delivery-capability requirement records.
+
+### Compare delivery paths and candidates
+**Observed need:** Local Works may evaluate multiple delivery paths and multiple candidates without treating either as a final provider selection.
+**Possible future capability:** Delivery-candidate pipeline.
+
+### Preserve evidence provenance
+**Observed need:** Candidate claims have varying evidence quality and self-report must not become verified history.
+**Possible future capability:** Partner evidence/provenance tracking.
+
+### Assess total delivery risk
+**Observed need:** Partner risk extends beyond price to fit, capacity, reliability, quality, security, control, subcontracting, handoff, and dependency.
+**Possible future capability:** Partner risk assessment.
+
+### Design continuity
+**Observed need:** Source repositories, accounts, credentials, decisions, tests, and documentation must remain transitionable if a provider leaves.
+**Possible future capability:** Delivery continuity checklist.
+
+### Gate estimate requests
+**Observed need:** Only prequalified candidates should receive comparable technical-estimate requests.
+**Possible future capability:** Qualified-for-estimate status.
+
+### Reuse observed performance
+**Observed need:** Actual partner performance should eventually become reusable evidence for future projects without inventing history.
+**Possible future capability:** Historical delivery-partner performance record.
