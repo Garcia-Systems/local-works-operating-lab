@@ -10,7 +10,7 @@ from __future__ import annotations
 from dataclasses import dataclass, field, replace
 from enum import Enum, auto
 import random
-from typing import Mapping
+from typing import Any, Mapping, Sequence
 
 from local_works.portfolio import CapacityState, ProjectStartState
 from local_works.portfolio_simulation import (
@@ -540,3 +540,246 @@ def simulate(config: BusinessSimulationConfig = None) -> BusinessSimulationResul
 
 
 BASELINE = BusinessSimulationConfig()
+
+# Chapter 32C: conclusions consume, rather than replace, Parts A and B.
+class FinalBusinessVerdict(Enum):
+    VIABLE = auto(); VIABLE_WITH_CHANGES = auto(); VIABLE_AS_SIDE_BUSINESS = auto()
+    VIABLE_AS_PART_TIME_BUSINESS = auto(); VIABLE_BUT_OWNER_CAPACITY_LIMITED = auto()
+    VIABLE_BUT_CASH_CONSTRAINED = auto(); VIABLE_BUT_TOO_CONCENTRATED = auto()
+    VIABLE_ONLY_WITH_HIGHER_PRICES = auto(); VIABLE_ONLY_WITH_BOUNDED_SUPPORT = auto()
+    VIABLE_ONLY_WITH_BETTER_DELIVERY_CAPACITY = auto(); FRAGILE = auto()
+    NOT_CURRENTLY_VIABLE = auto(); INSUFFICIENT_EVIDENCE = auto()
+
+
+class FinalEvidenceAssessment(Enum):
+    SIMULATION_ONLY = auto(); EARLY_REAL_WORLD_EVIDENCE = auto()
+    PARTIALLY_VALIDATED = auto(); STRONGLY_VALIDATED = auto(); UNKNOWN = auto()
+
+
+class FinalValidationPriority(Enum):
+    CRITICAL_NEXT = auto(); HIGH = auto(); MEDIUM = auto(); LOW = auto(); LATER = auto()
+
+
+class OwnerIncomeQuality(Enum):
+    ATTRACTIVE = auto(); POTENTIALLY_ATTRACTIVE = auto(); MIXED = auto(); WEAK = auto(); UNKNOWN = auto()
+
+
+class OperatingModelVerdict(Enum):
+    PROJECT_ONLY_PREFERRED = auto(); PAY_AS_YOU_GO_PREFERRED = auto()
+    LIGHT_SUPPORT_PREFERRED = auto(); MANAGED_SUPPORT_PREFERRED = auto()
+    MIXED_MODEL_PREFERRED = auto(); SIDE_BUSINESS_PREFERRED = auto()
+    PART_TIME_PREFERRED = auto(); FULL_TIME_PLAUSIBLE = auto(); INSUFFICIENT_EVIDENCE = auto()
+
+
+class ProductionSoftwareVerdict(Enum):
+    READY_FOR_SMALL_PUBLIC_SITE = auto(); READY_FOR_REQUIREMENTS = auto()
+    READY_FOR_MANUAL_CUSTOMER_OPERATION = auto(); MORE_BUSINESS_VALIDATION_FIRST = auto()
+    BUILD_ONLY_LIGHTWEIGHT_INTERNAL_TOOLS = auto(); DO_NOT_BUILD_PRODUCTION_APP_YET = auto()
+
+
+class ProductionApproach(Enum):
+    CONFIGURE = auto(); INTEGRATE = auto(); AUTOMATE = auto(); CUSTOM_BUILD = auto()
+    LEAVE_ALONE = auto(); UNKNOWN = auto()
+
+
+class ProductionCapabilityPriority(Enum):
+    MUST_FOR_FIRST_REAL_CUSTOMER = auto(); SHOULD_SOON = auto(); LATER = auto()
+    ONLY_IF_REPEATED = auto(); DO_NOT_BUILD_YET = auto()
+
+
+@dataclass(frozen=True)
+class ScorecardDimension:
+    dimension: str; status: BusinessHealth; evidence: str; main_risk: str
+    improve_confidence: str
+
+
+@dataclass(frozen=True)
+class FinalBusinessScorecard:
+    dimensions: tuple[ScorecardDimension, ...]
+
+    def get(self, dimension: str) -> ScorecardDimension | None:
+        return next((row for row in self.dimensions if row.dimension == dimension), None)
+
+
+@dataclass(frozen=True)
+class FinalCondition:
+    condition: str; evidence: str; lever: str
+
+
+@dataclass(frozen=True)
+class EvidenceGap:
+    question: str; current_assumption: str; current_evidence: str; importance: str
+    sensitivity: str; risk_if_wrong: str; validation_priority: FinalValidationPriority
+    validation_method: str
+
+
+@dataclass(frozen=True)
+class ValidationExperiment:
+    question: str; assumption: str; experiment: str; sample_size_or_scope: str
+    owner_time: str; cash_cost: str; evidence_to_collect: str; success_signal: str
+    failure_signal: str; decision_after: str; priority: FinalValidationPriority
+
+
+@dataclass(frozen=True)
+class ProductionReadiness:
+    capability: str; observed_need: str; current_workaround: str; evidence: str
+    frequency: str; pain: str; approach: ProductionApproach
+    priority: ProductionCapabilityPriority; unknowns: str
+
+
+@dataclass(frozen=True)
+class FinalBusinessAssessment:
+    baseline: BusinessSimulationResult
+    owner_income: Any
+    scenarios: tuple[Any, ...]
+    sensitivities: tuple[Any, ...]
+    monte_carlo: Any
+    operating_models: tuple[Any, ...]
+    scorecard: FinalBusinessScorecard
+    evidence_quality: FinalEvidenceAssessment
+    primary_verdict: FinalBusinessVerdict
+    qualifiers: tuple[str, ...]
+    rationale: str
+    owner_income_quality: OwnerIncomeQuality
+    operating_model_verdict: OperatingModelVerdict
+    bottleneck_evolution: tuple[tuple[str, Any], ...]
+    success_conditions: tuple[FinalCondition, ...]
+    failure_conditions: tuple[FinalCondition, ...]
+    evidence_gaps: tuple[EvidenceGap, ...]
+    experiments: tuple[ValidationExperiment, ...]
+    software_verdict: ProductionSoftwareVerdict
+    capabilities: tuple[ProductionReadiness, ...]
+
+    @property
+    def primary_bottleneck(self) -> CapstoneFinding:
+        return self.baseline.primary_bottleneck
+
+
+DIMENSIONS = ("DEMAND", "QUALIFICATION", "SALES", "CUSTOMER_VALUE", "PROJECT_ECONOMICS",
+ "DELIVERY", "QUALITY", "SUPPORT", "INCIDENTS", "EXPANSION", "RETENTION", "REFERRALS",
+ "CASH", "CUSTOMER_CONCENTRATION", "PARTNER_CONCENTRATION", "VENDOR_DEPENDENCY",
+ "OWNER_CAPACITY", "OWNER_INCOME", "INCOME_STABILITY", "REPEATABILITY", "CONTINUITY",
+ "EVIDENCE_QUALITY")
+
+
+def _scorecard(result: BusinessSimulationResult, owner: Any) -> FinalBusinessScorecard:
+    mapped = {"DEMAND": "DEMAND", "SALES": "SALES", "PROJECT_ECONOMICS": "PROJECT_ECONOMICS",
+              "DELIVERY": "DELIVERY", "SUPPORT": "SUPPORT", "CASH": "CASH",
+              "OWNER_CAPACITY": "OWNER_CAPACITY", "CUSTOMER_CONCENTRATION": "CONCENTRATION",
+              "PARTNER_CONCENTRATION": "PARTNER_RESILIENCE"}
+    rows = []
+    for dimension in DIMENSIONS:
+        status = result.health.get(mapped.get(dimension, ""), BusinessHealth.UNKNOWN)
+        if dimension == "OWNER_INCOME": status = BusinessHealth.MIXED if owner.years else BusinessHealth.UNKNOWN
+        if dimension == "INCOME_STABILITY": status = BusinessHealth.MIXED
+        if dimension == "EVIDENCE_QUALITY": status = BusinessHealth.WEAK
+        known = status is not BusinessHealth.UNKNOWN
+        rows.append(ScorecardDimension(dimension, status,
+            "Derived from the fictional 32A/32B simulation." if known else "No genuine operating observation exists.",
+            "The modeled assumption may differ materially in real operation.",
+            "Collect a real observation with provenance; repeated simulation is not validation."))
+    return FinalBusinessScorecard(tuple(rows))
+
+
+def _verdict(scenarios: Sequence[Any], evidence: FinalEvidenceAssessment) -> tuple[FinalBusinessVerdict, tuple[str, ...]]:
+    if evidence is FinalEvidenceAssessment.UNKNOWN: return FinalBusinessVerdict.INSUFFICIENT_EVIDENCE, ("evidence provenance unknown",)
+    base = next(row for row in scenarios if row.scenario == "BASELINE")
+    stress = next(row for row in scenarios if row.scenario == "STRESS")
+    qualifiers = ["qualified demand is unvalidated", "support must remain bounded"]
+    if base.minimum_cash < 0: qualifiers.append("working-capital reserve and payment timing require validation")
+    if base.overload_months: qualifiers.append("owner project concurrency must be gated")
+    if base.largest_partner_concentration > .5: qualifiers.append("delivery-partner dependency must be reduced")
+    if base.yearly_owner_draws[-1] <= 0 and stress.yearly_owner_draws[-1] <= 0: return FinalBusinessVerdict.NOT_CURRENTLY_VIABLE, tuple(qualifiers)
+    if stress.funding_required > 0 or stress.yearly_owner_draws[-1] < base.yearly_owner_draws[-1]*.5:
+        return FinalBusinessVerdict.FRAGILE, tuple(qualifiers)
+    if base.minimum_cash < 0 or base.overload_months: return FinalBusinessVerdict.VIABLE_WITH_CHANGES, tuple(qualifiers)
+    return FinalBusinessVerdict.VIABLE, tuple(qualifiers)
+
+
+def classify_final_verdict(*, annual_owner_income: float, full_time_target: float = 75_000,
+        side_business_floor: float = 15_000, minimum_cash: float = 0, overload_months: int = 0,
+        adverse_income_ratio: float = 1, evidence: FinalEvidenceAssessment = FinalEvidenceAssessment.SIMULATION_ONLY,
+        evidence_is_sufficient_for_model_decision: bool = True) -> FinalBusinessVerdict:
+    """Transparent policy for alternate assessments; evidence is never inferred from revenue."""
+    if evidence is FinalEvidenceAssessment.UNKNOWN or not evidence_is_sufficient_for_model_decision:
+        return FinalBusinessVerdict.INSUFFICIENT_EVIDENCE
+    if annual_owner_income <= 0: return FinalBusinessVerdict.NOT_CURRENTLY_VIABLE
+    if adverse_income_ratio < .35: return FinalBusinessVerdict.FRAGILE
+    if annual_owner_income < side_business_floor: return FinalBusinessVerdict.NOT_CURRENTLY_VIABLE
+    if annual_owner_income < full_time_target:
+        return FinalBusinessVerdict.VIABLE_AS_SIDE_BUSINESS
+    if minimum_cash < 0 or overload_months:
+        return FinalBusinessVerdict.VIABLE_WITH_CHANGES
+    return FinalBusinessVerdict.VIABLE
+
+
+def _gaps(sensitive: Sequence[Any]) -> tuple[EvidenceGap, ...]:
+    names = [row.assumption for row in sensitive]
+    topics = (("Will qualified strangers progress and buy?", "qualified lead and close rates", "Run bounded public audits and record funnel progression"),
+              ("Will customers pay for a bounded solution?", "average project price", "Test a proposal without discounting away uncertainty"),
+              ("Will delivery partners quote and deliver within the model?", "delivery cost and effort", "Request comparable estimates for one bounded scope"),
+              ("How many owner hours does delivery require?", "owner project hours", "Time discovery, coordination, QA, and acceptance"),
+              ("What support and incident tail follows launch?", "routine support hours and incident rate", "Observe and classify a bounded post-launch period"),
+              ("Will payment timing protect cash?", "final payment delay", "Record invoice-to-cash timing on a real engagement"))
+    gaps=[]
+    for index,(question, assumption, method) in enumerate(topics):
+        sensitivity = next((name for name in names if any(part in name for part in assumption.split())), names[min(index,len(names)-1)] if names else "UNKNOWN")
+        priority = FinalValidationPriority.CRITICAL_NEXT if index == 0 else FinalValidationPriority.HIGH if index < 3 else FinalValidationPriority.MEDIUM
+        gaps.append(EvidenceGap(question, assumption, "SIMULATION_ASSUMPTION", "Can reverse the business conclusion", sensitivity,
+            "Cash, capacity, or owner income may be materially worse", priority, method))
+    return tuple(gaps)
+
+
+def _experiments(gaps: Sequence[EvidenceGap]) -> tuple[ValidationExperiment, ...]:
+    scopes=("A small batch of public, evidence-only audits", "One bounded proposal", "Two comparable estimates",
+            "One small, bounded engagement", "One launch plus a bounded observation window", "One engagement payment cycle")
+    return tuple(ValidationExperiment(g.question,g.current_assumption,g.validation_method,scopes[i],
+        "Bound and log before starting", "Pre-authorized, low cash exposure", "Counts, timestamps, hours, objections, and outcomes",
+        "Observed result is within a predeclared workable range", "Observed result breaches the range or cannot be measured",
+        "Retain, revise, or reject the assumption before increasing commitment",g.validation_priority) for i,g in enumerate(gaps))
+
+
+def _capabilities() -> tuple[ProductionReadiness, ...]:
+    rows=(
+      ("CRM","track leads and decisions","spreadsheet or existing CRM",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.MUST_FOR_FIRST_REAL_CUSTOMER),
+      ("project management","track milestones, changes, and acceptance","existing project tool",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.MUST_FOR_FIRST_REAL_CUSTOMER),
+      ("file/document storage","share controlled artifacts","existing file storage",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.MUST_FOR_FIRST_REAL_CUSTOMER),
+      ("calendar/scheduling","schedule audits and decisions","existing calendar",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.MUST_FOR_FIRST_REAL_CUSTOMER),
+      ("forms/audits","capture consistent evidence","templates and forms",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.MUST_FOR_FIRST_REAL_CUSTOMER),
+      ("proposal generation","issue versioned decision documents","document template",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.SHOULD_SOON),
+      ("support intake","provide one bounded contact path","dedicated email",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.SHOULD_SOON),
+      ("customer updates","send concise status and decisions","email plus project tool",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.SHOULD_SOON),
+      ("partner coordination","exchange estimates and milestone evidence","shared documents",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.SHOULD_SOON),
+      ("cash tracking","see deposits, commitments, and reserve","manual cash ledger",ProductionApproach.CONFIGURE,ProductionCapabilityPriority.MUST_FOR_FIRST_REAL_CUSTOMER),
+      ("analytics/reporting","review pipeline, hours, support and concentration","spreadsheet exports",ProductionApproach.AUTOMATE,ProductionCapabilityPriority.ONLY_IF_REPEATED),
+      ("customer portal","centralize customer self-service","documents and email",ProductionApproach.LEAVE_ALONE,ProductionCapabilityPriority.DO_NOT_BUILD_YET),
+      ("custom back office","unify all workflows","configured tools",ProductionApproach.LEAVE_ALONE,ProductionCapabilityPriority.LATER))
+    return tuple(ProductionReadiness(n,need,work,"Chapters 0-32 modeled the need","Per engagement","Unknown until real use",approach,priority,"Frequency and integration pain are unobserved") for n,need,work,approach,priority in rows)
+
+
+def assess_final_business(*, baseline: BusinessSimulationResult | None = None,
+                          real_evidence: FinalEvidenceAssessment = FinalEvidenceAssessment.SIMULATION_ONLY) -> FinalBusinessAssessment:
+    """Assemble the final exam once from prior result objects; no claim of proof."""
+    from local_works.capstone_scenarios import (OwnerIncomeModel, bottleneck_evolution,
+        monte_carlo, operating_models, ranked_sensitivities, scenario_suite)
+    baseline = baseline or simulate(BASELINE)
+    owner = OwnerIncomeModel().calculate(baseline, BASELINE)
+    scenarios = scenario_suite(); sensitivities = ranked_sensitivities(); models = operating_models()
+    verdict, qualifiers = _verdict(scenarios, real_evidence)
+    if baseline.minimum_cash < 0 and not any("working-capital" in q for q in qualifiers):
+        qualifiers += ("working-capital reserve and payment timing require validation",)
+    quality = OwnerIncomeQuality.MIXED if baseline.minimum_cash < 0 or owner.stability.state.name in ("VOLATILE", "VERY_VOLATILE") else OwnerIncomeQuality.POTENTIALLY_ATTRACTIVE
+    conditions=(FinalCondition("Maintain qualified lead flow near tested thresholds","32B break-even and sensitivity","validate funnel"),
+      FinalCondition("Keep project contribution and owner hours within tested bounds","32B scenarios","gate starts and scope"),
+      FinalCondition("Enforce support boundaries and protect sales time","high-support scenario","bound support"),
+      FinalCondition("Fund the modeled cash trough before commitments","32A minimum cash","deposits and reserve"))
+    failures=(FinalCondition("Demand or close rate falls below tested range","low-demand/stress scenarios","revise market or stop"),
+      FinalCondition("Price falls or delivery cost rises","low-price sensitivity","re-scope or decline"),
+      FinalCondition("Support or concurrency consumes owner capacity","high-support/rapid-growth scenarios","cap starts"),
+      FinalCondition("Collection delay or partner loss breaches cash","cash-stress/partner scenarios","change timing or pause"))
+    gaps=_gaps(sensitivities)
+    return FinalBusinessAssessment(baseline,owner,scenarios,sensitivities,monte_carlo(),models,
+      _scorecard(baseline,owner),real_evidence,verdict,qualifiers,
+      "The lifecycle is coherent in the baseline, but adverse cases and simulation-only evidence prevent an unconditional conclusion.",
+      quality,OperatingModelVerdict.SIDE_BUSINESS_PREFERRED,bottleneck_evolution(BASELINE),conditions,failures,gaps,_experiments(gaps),
+      ProductionSoftwareVerdict.MORE_BUSINESS_VALIDATION_FIRST,_capabilities())
