@@ -566,3 +566,42 @@ These needs come from one fictional solution-selection exercise. They do not spe
 
 **Observed need:** Low, baseline, and high assumptions can change an economic conclusion as evidence develops.
 **Possible future capability:** Scenario and version history.
+
+## Chapter 14 — Scope the engagement
+
+These are needs observed in one fictional scoping exercise, not a production database, screen, API, or Laravel design.
+
+### Preserve a bounded project scope
+
+**Observed need:** Every solution needs a bounded project scope linked conceptually to its opportunity and solution direction.
+**Possible future capability:** Project-scope record linked to opportunity/solution.
+
+### Make both sides of the boundary visible
+
+**Observed need:** Included and intentionally excluded work must be explicitly distinguishable.
+**Possible future capability:** Scope-boundary tracking with workflow trigger and end condition.
+
+### Track assumptions and dependencies separately
+
+**Observed need:** Scope relies on beliefs as well as required customer, system, and third-party inputs.
+**Possible future capability:** Assumption/dependency register that preserves evidence, owner, status, criticality, and impact.
+
+### Divide responsibilities
+
+**Observed need:** Responsibilities differ among customer, Local Works, and an unselected delivery team.
+**Possible future capability:** Three-party responsibility assignment.
+
+### Connect scope to acceptance
+
+**Observed need:** Scoped work needs demonstrable acceptance criteria separate from longer-term business metrics.
+**Possible future capability:** Acceptance-criterion tracking linked to scope.
+
+### Classify additions rather than absorb them
+
+**Observed need:** New requests must remain visible as requested, included, deferred, rejected, or change-later instead of silently changing scope.
+**Possible future capability:** Deferred/out-of-scope request classification and history.
+
+### Gate estimation on sufficient clarity
+
+**Observed need:** Scope needs an explicit readiness decision before detailed estimation, including customer clarification, technical validation, reduction, and blocked outcomes.
+**Possible future capability:** Estimate-readiness gate with visible reasons.
