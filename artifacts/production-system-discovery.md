@@ -387,3 +387,52 @@ workflow engine.
 - **Frequency:** One fictional validation state; no history yet.
 - **Current workaround:** Status enum, validation questions, and version control.
 - **Production priority:** Unassigned pending real operating evidence.
+
+## Chapter 10 observations
+
+These needs arise from one fictional economics exercise, not production design evidence. They specify neither a database nor a UI.
+
+### Link economic assumptions to evidence
+
+- **Observed need:** Economic calculations require inputs with evidence provenance.
+- **Possible future capability:** Economic assumptions linked to evidence/source.
+- **Evidence:** Harbor Fitness volume, time, involvement, and loaded-cost inputs carry explicit estimated or hypothetical labels.
+- **Frequency:** One fictional exercise; no customer results.
+- **Current workaround:** Typed inputs and version-controlled artifact.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Separate kinds of economic impact
+
+- **Observed need:** Problem economics contains monetized, non-monetized, and unknown burdens.
+- **Possible future capability:** Separate economic-impact classifications.
+- **Evidence:** Direct labor is calculated while experience is non-monetized and revenue/retention remain unknown.
+- **Frequency:** One fictional analysis.
+- **Current workaround:** Separate component, narrative, and unknown lists.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Represent assumption ranges
+
+- **Observed need:** Economic assumptions may be ranges rather than single values.
+- **Possible future capability:** Scenario-based economic modeling.
+- **Evidence:** Low, baseline, and high Harbor Fitness scenarios expose volume, time, and involvement sensitivity.
+- **Frequency:** Three fictional scenarios.
+- **Current workaround:** Deterministic Python dictionaries and Markdown table.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Prevent overlapping burden
+
+- **Observed need:** Economic models must avoid double counting.
+- **Possible future capability:** Traceable burden components and calculation explanations.
+- **Evidence:** Components identify included work and overlap groups reject duplicate inclusion.
+- **Frequency:** One modeled safeguard; no production incidents.
+- **Current workaround:** Unique ids, overlap metadata, and review checklist.
+- **Production priority:** Unassigned pending real operating evidence.
+
+### Revise economics as evidence improves
+
+- **Observed need:** Economic analysis evolves as better evidence becomes available.
+- **Possible future capability:** Versioned economic assumptions/results.
+- **Evidence:** Harbor Fitness requests logs, time observation, escalations, and correction evidence before strengthening its gate.
+- **Frequency:** One fictional evidence plan.
+- **Current workaround:** Git history and dated artifacts.
+- **Production priority:** Unassigned pending real operating evidence.
