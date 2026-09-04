@@ -635,3 +635,27 @@ These are needs observed in one fictional scoping exercise, not a production dat
 ### Restructuring alternatives
 **Observed need:** A deal may require reduced scope, a simpler path, or phases rather than a price-only concession.
 **Possible future capability:** Comparable alternative pricing/scope structures with their independent cost and value assumptions.
+
+## Chapter 16 — Proposal and negotiation
+
+These are operational needs revealed by a fictional exercise, not database, screen, API, or Laravel designs.
+
+### Assemble from prior evidence
+**Observed need:** Proposals must derive from validated opportunity, solution, scope, pricing, and evidence records without contradicting them.
+**Possible future capability:** Proposal assembly with evidence-linked assertions and consistency checks.
+
+### Preserve revisions
+**Observed need:** Scope, price, payment, and assumptions can change while every prior proposal version remains material.
+**Possible future capability:** Proposal version history with change reason.
+
+### Preserve negotiation and impact
+**Observed need:** Negotiation requests alter scope, price, terms, risk, or structure and require visible customer/Local Works economic and cash impacts.
+**Possible future capability:** Proposal-linked negotiation log and request-impact analysis.
+
+### Record commercial exits
+**Observed need:** Local Works needs explicit withdrawal and walk-away decisions with reasons, even when a customer remains interested.
+**Possible future capability:** Commercial decision status and reason.
+
+### Separate lifecycle events
+**Observed need:** Acceptance in principle is distinct from contract execution, deposit receipt, authorization, and project start.
+**Possible future capability:** Separate proposal, contract, payment, and project lifecycle states.
