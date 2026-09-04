@@ -77,7 +77,10 @@ This is a decision set, not a promise to progress from left to right. “Leave a
 ### Part VIII — Test the business through time
 
 - **Chapter 31:** The Local Works Customer Portfolio (complete).
-- **Chapter 32:** Owner Income and the Final Local Works Examination (not yet implemented).
+- **Chapter 32 — IN PROGRESS**
+  - **32A complete:** Capstone engine + 36-month baseline.
+  - **32B pending:** Scenarios + owner income + break-even + sensitivity + Monte Carlo.
+  - **32C pending:** Final verdict + validation plan + production application requirements.
 
 ### Part VI summary
 
@@ -132,6 +135,7 @@ python scripts/run_chapter_29.py
 python scripts/run_chapter_30.py
 python scripts/run_chapter_31a.py
 python scripts/run_chapter_31b.py
+python scripts/run_chapter_32a.py
 python -m pytest
 ```
 

@@ -1076,3 +1076,26 @@ These needs came only from a deterministic fictional portfolio simulation. They 
 - **Possible future capability:** Operating-period snapshots.
 - **Evidence:** Normal and overloaded review outputs need the same categories over time.
 - **Current workaround:** Generated monthly review text and Markdown template.
+
+## Chapter 32A discoveries
+
+These are observations from one fictional 36-month baseline, not a production
+design, database schema, screen, or API specification.
+
+**Observed need:** Business assumptions must remain distinguishable from real measurements.
+**Possible future capability:** Hypothesis/evidence records.
+
+**Observed need:** Customer lifecycle state must be visible across years.
+**Possible future capability:** Longitudinal customer lifecycle history.
+
+**Observed need:** Pipeline, delivery, support, and cash interact over time.
+**Possible future capability:** Cross-domain operating forecast.
+
+**Observed need:** Owner capacity affects future sales and delivery simultaneously.
+**Possible future capability:** Owner workload forecast.
+
+**Observed need:** Support tails accumulate after project completion.
+**Possible future capability:** Future support-load projection.
+
+**Observed need:** Cash failure can occur despite positive contribution.
+**Possible future capability:** Cash-reserve and working-capital warning.
