@@ -755,3 +755,35 @@ These are needs revealed by fictional estimate-comparison training, not database
 ### Route estimate findings backward
 **Observed need:** Poor, divergent, over-scoped, or incomplete estimates may require solution or scope reconsideration rather than provider selection.
 **Possible future capability:** Estimate-decision links to solution and scope revision.
+
+## Chapter 20 — Delivery risk and ownership
+
+These needs come from fictional operational-control analysis, not database schemas, screens, APIs, or Laravel models.
+
+### Separate legal ownership from operational control
+**Observed need:** Legal rights, practical asset control, and delivery responsibility may belong to different parties and must not be collapsed.
+**Possible future capability:** Separate ownership/control metadata.
+
+### Inventory project asset control
+**Observed need:** Projects depend on applicable operational assets controlled by different parties, with backup, recovery, and transferability conditions.
+**Possible future capability:** Project asset/control register.
+
+### Track access without secrets
+**Observed need:** Access purpose, level, status, and revocation must be known without storing credentials in project records.
+**Possible future capability:** Access metadata and revocation tracking.
+
+### Expose responsibility gaps and authority overlap
+**Observed need:** Delivery responsibilities can be unowned, while production or change authority can be dangerously ambiguous.
+**Possible future capability:** Project responsibility matrix with gap/overlap review.
+
+### Keep knowledge transitionable
+**Observed need:** Project continuity depends on proportional documentation, current state, test evidence, and decision context—not source access alone.
+**Possible future capability:** Knowledge/documentation register.
+
+### Own dependencies and escalation
+**Observed need:** Third-party dependencies require explicit relationship owners, limitations, fallback, and coordinated escalation paths.
+**Possible future capability:** Dependency and escalation register.
+
+### Test continuity before kickoff
+**Observed need:** Provider and Local Works disappearance should be tested before work starts so neither partner nor customer is trapped.
+**Possible future capability:** Delivery-continuity readiness assessment.
