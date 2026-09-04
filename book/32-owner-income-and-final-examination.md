@@ -1,8 +1,10 @@
 # Chapter 32 — Owner Income and the Final Local Works Examination
 
-> **IN PROGRESS after 32A.** This part builds one fictional baseline engine. It
-> does not calculate owner income, run scenarios or Monte Carlo, or issue the
-> final business verdict.
+> **IN PROGRESS after 32B.** Part A built the fictional baseline engine. Part B
+> adds owner economics, scenarios, break-even, sensitivity, and Monte Carlo.
+> Part C—and therefore the final business verdict—remains pending.
+> The unchanged Part A result itself does not calculate owner income; Part B
+> applies a separate compensation analysis to that result.
 
 ## 1. The final question
 
@@ -171,7 +173,114 @@ This is a bottleneck finding, not a final business verdict.
 
 ## 31. What remains for the final examination
 
-32B still owns scenario comparison, owner-income and break-even work, sensitivity,
-and Monte Carlo. 32C still owns the final verdict, real-world validation plan, and
-production-application requirements. No final happy ending is asserted in 32A.
+32B now supplies scenario comparison, owner-income and break-even work,
+sensitivity, Monte Carlo, model alternatives, and a bounded lever test. 32C still
+owns the final verdict, real-world validation plan, and production-application
+requirements. No final happy ending is asserted.
 
+## 32. Owner income is not revenue
+
+Revenue is what the business earns from projects, support, and expansion.
+Contribution subtracts direct delivery and modeled service burden. Cash records
+when money actually moves. Owner draw is a later compensation decision. The model
+therefore reports revenue, contribution, engine cash, post-draw cash, draw/hour,
+and contribution/hour separately. Draw/hour is not necessarily profit/hour.
+
+## 33. Reserve-first compensation
+
+The default policy first protects the minimum operating reserve and a near-term
+overhead commitment. It draws only half of the remainder, subject to a monthly
+cap. Zero draw is valid even in a revenue-producing month. Other explicit policy
+types include no draw, fixed draw, variable draw, and percentage of available
+cash. This planning simulation is not tax or accounting advice.
+
+## 34. Owner workload and income stability
+
+Every scenario retains Part A's sales, discovery, project coordination, QA,
+support, incident, relationship, and administration hours. Average, peak, and
+overload matter alongside owner income. Monthly zero draws, below-target months,
+range, standard deviation, and a simple variability classification prevent a
+strong annual total from disguising an unusable monthly pattern.
+
+## 35. Scenario analysis
+
+A business model should not be judged by one baseline run. The unchanged Part A
+baseline is compared with conservative, optimistic, combined stress, rapid
+growth, low demand, low price, high support burden, and cash stress. Partner
+failure, customer concentration, and a larger owner absence are also represented.
+Each configuration is explicit and uses the same engine and evidence statuses.
+
+The conservative case weakens demand and conversion while increasing cost,
+support, sales-cycle, and collection friction. The optimistic case strengthens
+qualified demand and healthy relationship behavior but retains finite capacity.
+The stress case combines plausible adverse pressures. None is a prediction.
+
+Rapid growth asks whether success breaks delivery, support, cash, or the owner.
+Low demand can leave sound unit economics idle; low price can keep the owner busy
+without supporting the target. High support burden tests the accumulating tail.
+Cash stress demonstrates why positive contribution need not eliminate working
+capital. Partner failure constrains starts; customer concentration increases
+exposure; owner absence removes available hours rather than inventing overtime.
+
+## 36. Break-even thresholds
+
+Break-even translates a selected—not universal—annual owner-income target into
+qualified opportunities per month, annual sales, and required contribution under
+the current mix. It also estimates maximum project owner hours at the configured
+time-value threshold, maximum support hours before support margin is consumed,
+and opening cash needed to survive the modeled timing. These conditional
+thresholds identify assumptions to validate; they are not legal or financial terms.
+
+## 37. One-variable sensitivity
+
+Each selected assumption receives a plausible low/base/high test while all other
+configuration stays fixed. The output compares Year 3 draw, 36-month contribution,
+minimum cash, workload, and overload. Ranking the absolute Year 3 draw range finds
+the important assumptions from results rather than from a hardcoded opinion.
+
+## 38. Monte Carlo and its interpretation
+
+The standard-library Monte Carlo draws only a focused group: leads,
+qualification, close rate, price, delivery cost, collection delay, support use,
+and incidents. A configurable seed makes it repeatable. P10, P50, and P90 owner
+draw and event frequencies summarize the generated runs.
+
+Those frequencies mean only “the share of these simulation draws under these
+assumptions.” They are not empirical probabilities and must never be described as
+Local Works' real-world chance of success.
+
+## 39. Operating-model alternatives
+
+Project-only has minimal support tail but stronger dependence on continued sales.
+Pay-as-you-go adds bounded post-launch work without committed capacity. Light
+support adds continuity; managed support adds recurring revenue and greater
+service expectations. A mixed relationship model combines projects, light
+support, expansion, and referrals. The comparison does not assume mixed wins.
+
+Side-business, part-time, and full-time capacity configurations are classified as
+plausible, plausible with limits, not plausible, or unknown. They are capacity
+experiments, not personal recommendations.
+
+## 40. Business-design levers and before/after tests
+
+Levers include price, qualification, owner delivery effort, support scope and
+price, deposits and timing, concurrency, partner/customer diversity, simpler
+configuration, referral of bad fits, and protected sales time. The implemented
+test raises low-scenario project price by a plausible 15%. It reports both the
+improved contribution and a worse Year 3 draw caused by changed start/cash timing;
+one lever does not magically fix unrelated inputs or every outcome.
+
+## 41. Bottlenecks through time
+
+Each scenario names one primary constraint from demand, sales, economics,
+delivery, support, cash, owner capacity, partner capacity, or concentration. A
+coarse early/middle/late view shows baseline cash pressure becoming delivery
+pressure, while rapid growth proceeds from cash to delivery to owner capacity.
+The evolution is evidence for Part C, not the Part C verdict itself.
+
+## 42. Stop before Part C
+
+Part B produces evidence about robustness and owner economics. It deliberately
+does not establish final success/failure conditions, prioritize real-world
+evidence gaps, create a validation plan, summarize production requirements,
+authorize a website, or conclude the book. Those decisions remain in 32C.
